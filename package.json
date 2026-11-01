@@ -1,0 +1,48 @@
+{
+  "name": "whirlpick",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:links": "node scripts/check-links.mjs",
+    "dev:vinext": "vite dev --port 3001",
+    "build:vinext": "vite build",
+    "start:vinext": "vite preview",
+    "deploy:vinext": "vinext-cloudflare deploy",
+    "deploy": "vinext-cloudflare deploy",
+    "deploy:preview": "vinext-cloudflare deploy --preview",
+    "generate:images": "node scripts/generate-images.mjs"
+  },
+  "dependencies": {
+    "@vinext/cloudflare": "^1.3.0",
+    "framer-motion": "^14.9.0",
+    "lucide-react": "^1.66.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "read-excel-file": "^9.3.14"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-beta.v.8",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "@vitejs/plugin-rsc": "^0.5.38",
+    "cf": "^1.0.0-beta.26",
+    "postcss": "^8.5.0",
+    "react-server-dom-webpack": "19.3.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.9.0",
+    "vinext": "^1.4.0",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,26 @@
+export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
+  // Four-color wheel with a notch pointer — the WhirlPick mark.
+  return (
+    <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
+      <circle cx="20" cy="21" r="17" fill="#fff" />
+      <path d="M20 21 L20 5 A16 16 0 0 1 36 21 Z" fill="#5B5BF0" />
+      <path d="M20 21 L36 21 A16 16 0 0 1 20 37 Z" fill="#FF6B5B" />
+      <path d="M20 21 L20 37 A16 16 0 0 1 4 21 Z" fill="#FFC53D" />
+      <path d="M20 21 L4 21 A16 16 0 0 1 20 5 Z" fill="#2EC4B6" />
+      <circle cx="20" cy="21" r="16" fill="none" stroke="#141625" strokeWidth="2.5" />
+      <circle cx="20" cy="21" r="4.5" fill="#141625" />
+      <path d="M20 9 L15.5 1.5 H24.5 Z" fill="#141625" />
+    </svg>
+  );
+}
+
+export function Logo() {
+  return (
+    <span className="flex items-center gap-2">
+      <LogoMark />
+      <span className="text-lg font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+        Whirl<span className="text-primary">Pick</span>
+      </span>
+    </span>
+  );
+}

@@ -1,0 +1,44 @@
+name: Test and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+      NEXT_PUBLIC_GA_ID: ${{ vars.NEXT_PUBLIC_GA_ID }}
+      NEXT_PUBLIC_GTM_ID: ${{ vars.NEXT_PUBLIC_GTM_ID }}
+      NEXT_PUBLIC_GSC_VERIFICATION: ${{ vars.NEXT_PUBLIC_GSC_VERIFICATION }}
+      NEXT_PUBLIC_ADSENSE_CLIENT: ${{ vars.NEXT_PUBLIC_ADSENSE_CLIENT }}
+      NEXT_PUBLIC_AD_SLOT_BELOW_WHEEL: ${{ vars.NEXT_PUBLIC_AD_SLOT_BELOW_WHEEL }}
+      NEXT_PUBLIC_AD_SLOT_IN_CONTENT: ${{ vars.NEXT_PUBLIC_AD_SLOT_IN_CONTENT }}
+      NEXT_PUBLIC_AD_SLOT_SIDEBAR: ${{ vars.NEXT_PUBLIC_AD_SLOT_SIDEBAR }}
+      NEXT_PUBLIC_AD_SLOT_ARTICLE_END: ${{ vars.NEXT_PUBLIC_AD_SLOT_ARTICLE_END }}
+      NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.NEXT_PUBLIC_CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run typecheck
+      - name: Deploy preview (pull requests)
+        if: github.event_name == 'pull_request'
+        run: npm run deploy:preview
+      - name: Deploy production (main)
+        if: github.event_name == 'push'
+        env:
+          CF_CUSTOM_DOMAIN: ${{ vars.CF_CUSTOM_DOMAIN }}
+        run: npm run deploy
