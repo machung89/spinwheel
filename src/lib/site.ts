@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "WhirlPick",
   tagline: "Free Random Picker Wheel",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://whirlpick.com").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://spinwheelge.com").replace(/\/$/, ""),
   description:
     "Create a custom spinning wheel, pick random names, choose prizes and make decisions instantly. Free, fair and no sign-up required.",
-  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@whirlpick.com",
+  contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@spinwheelge.com",
   locale: "en_US",
   twitter: undefined as string | undefined,
 };

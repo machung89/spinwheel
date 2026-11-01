@@ -50,14 +50,14 @@ https://opennext.js.org/cloudflare, then run `npx opennextjs-cloudflare build &&
 1. Add the domain to Cloudflare (Websites → Add a site) and point your registrar's nameservers to Cloudflare.
 2. Deploy with the domain set:
    ```bash
-   CF_CUSTOM_DOMAIN=whirlpick.com npm run deploy
+   CF_CUSTOM_DOMAIN=spinwheelge.com npm run deploy
    ```
    `cloudflare.config.ts` adds `domains: [CF_CUSTOM_DOMAIN]` to production. Cloudflare then creates the DNS record
    and issues the TLS certificate automatically, so HTTPS works with no extra steps. Once a domain is set,
    the workers.dev URL is turned off for production.
 3. In the zone, enable **SSL/TLS → Edge Certificates → Always Use HTTPS** and **HSTS** after confirming HTTPS works.
 4. **www:** add a proxied DNS record for `www` (e.g. `AAAA www 100::`) and a **Redirect Rule** from
-   `https://www.whirlpick.com/*` to `https://whirlpick.com/${1}` (301), so there's one canonical host.
+   `https://www.spinwheelge.com/*` to `https://spinwheelge.com/${1}` (301), so there's one canonical host.
 5. Make sure `NEXT_PUBLIC_SITE_URL` matches the domain, then rebuild.
 
 ## Secrets

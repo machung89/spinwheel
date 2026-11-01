@@ -6,8 +6,7 @@ import { bindings, defineConfig } from "cf/config";
  * - Production:  `npm run deploy`           (Vite mode "production")
  * - Preview:     `npm run deploy:preview`   (Vite mode "preview" -> separate Worker "whirlpick-preview")
  *
- * Custom domain: set CF_CUSTOM_DOMAIN (e.g. "whirlpick.com") in the shell or CI when deploying
- * production. Cloudflare then creates the DNS record and HTTPS certificate automatically.
+ * Custom domain: production uses spinwheelge.com by default; set CF_CUSTOM_DOMAIN to override. Cloudflare then creates the DNS record and HTTPS certificate automatically.
  * The domain's zone must already be on your Cloudflare account.
  *
  * Secrets (optional): YOUTUBE_API_KEY powers the YouTube Comment Picker's link loading. Set it with
@@ -16,7 +15,8 @@ import { bindings, defineConfig } from "cf/config";
  */
 export default defineConfig(({ mode }) => {
   const isPreview = mode === "preview";
-  const domain = process.env.CF_CUSTOM_DOMAIN;
+  // Production is served on spinwheelge.com unless CF_CUSTOM_DOMAIN overrides it ("" disables it).
+  const domain = process.env.CF_CUSTOM_DOMAIN ?? "spinwheelge.com";
   return {
     worker: {
       name: isPreview ? "whirlpick-preview" : "whirlpick",

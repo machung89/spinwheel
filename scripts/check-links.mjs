@@ -3,7 +3,7 @@
 // a <title>, a meta description and a canonical link.
 // Usage: node scripts/check-links.mjs [baseUrl]   (default http://localhost:3000)
 const base = (process.argv[2] || "http://localhost:3000").replace(/\/$/, "");
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://whirlpick.com").replace(/\/$/, "");
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://spinwheelge.com").replace(/\/$/, "");
 
 const toLocal = (u) => (u.startsWith(siteUrl) ? base + u.slice(siteUrl.length) : u);
 const seen = new Map();

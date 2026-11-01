@@ -40,7 +40,7 @@ inlined at **build time**, so rebuild after changing them.
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Canonical origin, e.g. `https://whirlpick.com` (no trailing slash) |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin, e.g. `https://spinwheelge.com` (no trailing slash) |
 | `NEXT_PUBLIC_GA_ID` / `NEXT_PUBLIC_GTM_ID` | Google Analytics 4 / Tag Manager (optional) |
 | `NEXT_PUBLIC_GSC_VERIFICATION` | Search Console HTML-tag token (optional) |
 | `NEXT_PUBLIC_ADSENSE_CLIENT` + `NEXT_PUBLIC_AD_SLOT_*` | AdSense publisher and ad-unit IDs (optional; ads render nothing until set) |
