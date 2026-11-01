@@ -165,7 +165,7 @@ export const WheelStage = forwardRef<WheelStageHandle, Props>(function WheelStag
       className={cn("relative mx-auto w-full rounded-3xl", BG_EFFECTS[design.backgroundEffect], className)}
       style={{ background: design.backgroundColor !== "transparent" ? design.backgroundColor : undefined }}
     >
-      <div ref={wrapRef} className={cn("wheel-canvas-wrap relative mx-auto aspect-square w-full", compact ? "max-w-[300px]" : "max-w-[560px]")}>
+      <div ref={wrapRef} className={cn("wheel-canvas-wrap relative mx-auto aspect-square w-full", compact ? "is-compact max-w-[300px]" : "max-w-[560px]")}>
         <div ref={rotorRef} className="absolute inset-0 will-change-transform" style={{ transform: `rotate(${rotation.current}deg)` }}>
           <canvas ref={canvasRef} className="h-full w-full" role="img" aria-label={fmt(t.wheel.canvasLabel, { n: live.length })} />
         </div>

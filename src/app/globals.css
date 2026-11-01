@@ -140,18 +140,20 @@ body {
   color: var(--fg);
 }
 
-/* Fullscreen wheel stage */
-.wheel-stage:fullscreen {
+/* Fullscreen wheel stage (native :fullscreen and the CSS overlay fallback both set data-fullscreen) */
+.wheel-stage[data-fullscreen] {
   background: var(--bg);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  /* "safe" keeps the title reachable instead of pushing it above the viewport when content is tall. */
+  justify-content: safe center;
+  padding: 1.5rem;
   overflow: auto;
 }
-.wheel-stage:fullscreen .wheel-canvas-wrap {
-  width: min(88vh, 92vw);
+/* The wheel takes the height left after the title bar, buttons and result line (~15rem), so the whole
+   stage fits on one screen without cutting off the title. */
+.wheel-stage[data-fullscreen] .wheel-canvas-wrap:not(.is-compact) {
+  width: max(9rem, min(calc(100dvh - 15rem), 92vw));
   max-width: none;
 }
 

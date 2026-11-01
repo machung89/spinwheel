@@ -216,9 +216,10 @@ export function WheelApp({ storageKey, preset, templateSlug }: Props) {
 
           <div
             ref={stageAreaRef}
+            data-fullscreen={fullscreen === "none" ? undefined : fullscreen}
             className={cn(
               "wheel-stage rounded-3xl border border-border bg-card p-3 shadow-sm sm:p-5",
-              fullscreen === "css" && "fixed inset-0 z-[90] flex flex-col justify-center overflow-auto rounded-none border-0",
+              fullscreen === "css" && "fixed inset-0 z-[90] rounded-none border-0",
             )}
           >
             <div className="mb-3 flex items-center justify-between gap-2">
