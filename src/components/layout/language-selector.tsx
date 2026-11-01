@@ -35,6 +35,7 @@ export function LanguageSelector() {
                   href={localizePath(l, path)}
                   hrefLang={m.hreflang}
                   lang={m.htmlLang}
+                  dir={m.dir}
                   role="menuitem"
                   aria-current={active ? "true" : undefined}
                   className="lang-option"

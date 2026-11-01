@@ -34,6 +34,50 @@ export function Flag({ code, className }: { code: LocaleMeta["flag"]; className?
           <rect x="20" width="10" height="20" fill="#EF4135" />
         </>
       )}
+      {code === "de" && (
+        <>
+          <rect width="30" height="20" fill="#000" />
+          <rect y="6.67" width="30" height="6.67" fill="#DD0000" />
+          <rect y="13.33" width="30" height="6.67" fill="#FFCE00" />
+        </>
+      )}
+      {code === "jp" && (
+        <>
+          <rect width="30" height="20" fill="#fff" />
+          <circle cx="15" cy="10" r="6" fill="#BC002D" />
+        </>
+      )}
+      {code === "kr" && (
+        <>
+          <rect width="30" height="20" fill="#fff" />
+          <circle cx="15" cy="10" r="5" fill="#0047A0" />
+          <path d="M10 10a5 5 0 0 1 10 0a2.5 2.5 0 0 1-5 0a2.5 2.5 0 0 0-5 0z" fill="#CD2E3A" />
+          {/* Trigrams, simplified to solid bars at this size. */}
+          <g stroke="#000" strokeWidth="1.1" strokeLinecap="butt">
+            <path d="M5 3.6l3 2.2M4.2 4.7l3 2.2M3.4 5.8l3 2.2" />
+            <path d="M25 3.6l-3 2.2M25.8 4.7l-3 2.2M26.6 5.8l-3 2.2" />
+            <path d="M5 16.4l3-2.2M4.2 15.3l3-2.2M3.4 14.2l3-2.2" />
+            <path d="M25 16.4l-3-2.2M25.8 15.3l-3-2.2M26.6 14.2l-3-2.2" />
+          </g>
+        </>
+      )}
+      {code === "cn" && (
+        <>
+          <rect width="30" height="20" fill="#EE1C25" />
+          <path d="M5 2.2l.9 2.75h2.9l-2.35 1.7.9 2.75L5 7.7 2.65 9.4l.9-2.75L1.2 4.95h2.9z" fill="#FFFF00" />
+          {[[10, 2], [12, 4], [12, 7], [10, 9]].map(([x, y]) => (
+            <circle key={`${x}${y}`} cx={x} cy={y} r="0.85" fill="#FFFF00" />
+          ))}
+        </>
+      )}
+      {code === "sa" && (
+        <>
+          <rect width="30" height="20" fill="#006C35" />
+          {/* Inscription and sword, simplified for icon size. */}
+          <path d="M8 7.2h14M9 9h12M10.5 7.2v1.8M14 7.2v1.8M17.5 7.2v1.8" stroke="#fff" strokeWidth="0.9" fill="none" />
+          <path d="M8 13h13.5l1.5-.8" stroke="#fff" strokeWidth="0.9" fill="none" />
+        </>
+      )}
       {code === "br" && (
         <>
           <rect width="30" height="20" fill="#009C3B" />

@@ -46,14 +46,14 @@ export default async function LocaleLayout({ children, params }: Props) {
   const locale = toLocale((await params).lang);
   const t = getDict(locale);
   return (
-    <html lang={localeMeta[locale].htmlLang} suppressHydrationWarning>
+    <html lang={localeMeta[locale].htmlLang} dir={localeMeta[locale].dir} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <script dangerouslySetInnerHTML={{ __html: consentDefaultsScript }} />
       </head>
       <body className="min-h-dvh">
         <I18nProvider locale={locale} dict={t}>
-          <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[200] focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-fg">
+          <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[200] focus:rounded-lg focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-fg">
             {t.nav.skip}
           </a>
           <Header locale={locale} t={t} />

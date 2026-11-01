@@ -11,7 +11,7 @@ export function TemplateCard({ t, locale }: { t: WheelTemplate; locale: Locale }
       <span className="text-2xl" aria-hidden="true">
         {t.emoji}
       </span>
-      <span>
+      <span className="min-w-0 break-words hyphens-auto">
         <span className="block font-semibold">{t.name}</span>
         <span className="mt-0.5 block text-sm text-muted-fg">{t.description}</span>
       </span>

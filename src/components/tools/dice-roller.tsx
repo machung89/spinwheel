@@ -95,7 +95,7 @@ export function DiceRoller() {
               </ul>
               <p className="mt-5 text-lg">
                 {t.total} <strong className="text-3xl font-black tabular-nums">{total}</strong>
-                {modifier !== 0 && <span className="ml-2 text-sm text-muted-fg">{fmt(t.includes, { m: modifier > 0 ? `+${modifier}` : modifier })}</span>}
+                {modifier !== 0 && <span className="ms-2 text-sm text-muted-fg">{fmt(t.includes, { m: modifier > 0 ? `+${modifier}` : modifier })}</span>}
               </p>
             </>
           )}

@@ -4,12 +4,15 @@ import { getDict } from "@/i18n/server";
 import { categoriesFor, landingPagesFor, pagesFor, postsFor, templatesFor } from "@/content";
 import { isFullTemplate } from "@/data/templates/templates";
 import { fitTitle } from "@/lib/seo";
+import { displayWidth } from "@/lib/text";
 import { siteConfig } from "@/lib/site";
 
-// Search results show roughly 60 characters of a title and 155–160 of a description.
-// Translations run longer than English, so this guards every locale.
+// Search results show roughly 60 characters of a title and 155–160 of a description (about half that
+// in CJK scripts, so lengths are measured as display width). Translations run longer than English,
+// so this guards every locale.
 const TITLE = { min: 25, max: 65 };
 const DESC = { min: 70, max: 165 };
+const outside = (n: number, r: { min: number; max: number }) => n < r.min || n > r.max;
 
 function metas(locale: (typeof locales)[number]) {
   const t = getDict(locale);
@@ -32,8 +35,8 @@ describe("search snippet lengths", () => {
   for (const locale of locales) {
     it(`${locale}: titles ${TITLE.min}–${TITLE.max} and descriptions ${DESC.min}–${DESC.max} characters`, () => {
       const bad = metas(locale).flatMap((m) => [
-        ...(m.title.length < TITLE.min || m.title.length > TITLE.max ? [`title ${m.title.length} ${m.id}: ${m.title}`] : []),
-        ...(m.description.length < DESC.min || m.description.length > DESC.max ? [`desc ${m.description.length} ${m.id}: ${m.description}`] : []),
+        ...(outside(displayWidth(m.title), TITLE) ? [`title ${displayWidth(m.title)} ${m.id}: ${m.title}`] : []),
+        ...(outside(displayWidth(m.description), DESC) ? [`desc ${displayWidth(m.description)} ${m.id}: ${m.description}`] : []),
       ]);
       expect(bad).toEqual([]);
     });

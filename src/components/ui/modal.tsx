@@ -108,7 +108,7 @@ export function Modal({
               type="button"
               onClick={onClose}
               aria-label={t.common.closeDialog}
-              className="absolute top-3 right-3 inline-flex h-8 w-8 items-center justify-center rounded-lg text-muted-fg hover:bg-muted hover:text-fg focus-visible:outline-2 focus-visible:outline-ring"
+              className="absolute end-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-lg text-muted-fg hover:bg-muted hover:text-fg focus-visible:outline-2 focus-visible:outline-ring"
             >
               <X className="size-4" />
             </button>

@@ -3,14 +3,10 @@ import { describe, expect, it } from "vitest";
 import { localizePath, locales, splitLocale, fmt } from "@/i18n/config";
 import { categoriesFor, landingPagesFor, pagesFor, postsFor, templatesFor, todFor } from "@/content";
 import { isFullTemplate } from "@/data/templates/templates";
-import en from "@/i18n/dictionaries/en";
-import vi from "@/i18n/dictionaries/vi";
-import es from "@/i18n/dictionaries/es";
-import fr from "@/i18n/dictionaries/fr";
-import pt from "@/i18n/dictionaries/pt";
+import { getDict } from "@/i18n/server";
 
-const others = ["vi", "es", "fr", "pt"] as const;
-const dicts = { vi, es, fr, pt };
+const en = getDict("en");
+const others = locales.filter((l) => l !== "en");
 
 function leaves(o: object, prefix = ""): [string, string][] {
   return Object.entries(o).flatMap(([k, v]) => (typeof v === "string" ? [[prefix + k, v] as [string, string]] : leaves(v, `${prefix}${k}.`)));
@@ -39,7 +35,7 @@ describe("dictionaries", () => {
   const enLeaves = leaves(en);
   for (const l of others) {
     it(`${l}: keeps every {placeholder} and translates UI text`, () => {
-      const map = new Map(leaves(dicts[l]));
+      const map = new Map(leaves(getDict(l)));
       let identical = 0;
       for (const [key, value] of enLeaves) {
         const t = map.get(key)!;

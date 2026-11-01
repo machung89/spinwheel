@@ -101,17 +101,17 @@ export default async function HomePage({ params }: Props) {
               <p className="mt-2 text-muted-fg">{h.templatesSub}</p>
             </div>
             <Link href={L("/templates/")} className={buttonClass("outline", "md")}>
-              {h.allTemplates} <ArrowRight />
+              {h.allTemplates} <ArrowRight className="rtl:-scale-x-100" />
             </Link>
           </div>
           <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {popular.map((tp) => (
-              <li key={tp.slug}>
+              <li key={tp.slug} className="min-w-0">
                 <Link href={L(templateHref(tp))} className="flex h-full items-start gap-3 rounded-2xl border border-border bg-card p-4 transition-shadow hover:shadow-md">
                   <span className="text-2xl" aria-hidden="true">
                     {tp.emoji}
                   </span>
-                  <span>
+                  <span className="min-w-0 break-words hyphens-auto">
                     <span className="block font-semibold">{tp.name}</span>
                     <span className="mt-0.5 block text-xs text-muted-fg">{tp.description}</span>
                   </span>
@@ -142,8 +142,8 @@ export default async function HomePage({ params }: Props) {
             <h2 className="text-2xl font-extrabold tracking-tight">{h.moreTools}</h2>
             <ul className="mt-5 grid gap-2 sm:grid-cols-2">
               {toolLinks(locale).map((tool) => (
-                <li key={tool.href}>
-                  <Link href={L(tool.href)} className="block h-full rounded-2xl border border-border bg-card p-4 hover:shadow-md">
+                <li key={tool.href} className="min-w-0">
+                  <Link href={L(tool.href)} className="block h-full break-words hyphens-auto rounded-2xl border border-border bg-card p-4 hover:shadow-md">
                     <span className="font-semibold">{tool.name}</span>
                     <span className="mt-0.5 block text-xs text-muted-fg">{tool.description}</span>
                   </Link>

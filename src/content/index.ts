@@ -17,8 +17,13 @@ import vi from "./vi";
 import es from "./es";
 import fr from "./fr";
 import pt from "./pt";
+import de from "./de";
+import ja from "./ja";
+import ko from "./ko";
+import zh from "./zh";
+import ar from "./ar";
 
-const localized: Record<Exclude<Locale, "en">, LocaleContent> = { vi, es, fr, pt };
+const localized: Record<Exclude<Locale, "en">, LocaleContent> = { vi, es, fr, pt, de, ja, ko, zh, ar };
 
 /** Replaces preset text by position, keeping emoji/colors/weights from the English base. */
 export function localizePreset(base: WheelPreset | undefined, title?: string, entries?: LocEntry[]): WheelPreset | undefined {

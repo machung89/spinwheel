@@ -56,7 +56,7 @@ export function WinnerDialog({ open, segment, wheelTitle, eliminating, onClose, 
         {entry.description && <p className="text-muted-fg">{entry.description}</p>}
       </div>
       {entry.hidden && (
-        <div className="mt-5 rounded-2xl border border-primary/30 bg-primary-soft p-4 text-left">
+        <div className="mt-5 rounded-2xl border border-primary/30 bg-primary-soft p-4 text-start">
           <p className="mb-1 text-xs font-bold tracking-wide text-primary uppercase">{t.winner.revealed}</p>
           <p className="whitespace-pre-wrap">{entry.hidden}</p>
         </div>

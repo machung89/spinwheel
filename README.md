@@ -2,7 +2,8 @@
 
 A free, SEO-first random picker platform: a fully featured spinning wheel, 12 wheel landing pages,
 8 standalone random tools, 48 templates in 10 categories (37 with their own page, 11 linking to landing pages), and a blog —
-fully translated into **English, Tiếng Việt, Español, Français and Português (BR)**. It's built with Next.js 16
+fully translated into **10 languages**: English, Tiếng Việt, Español, Français, Português (BR), Deutsch, 日本語,
+한국어, 简体中文 and العربية (right-to-left). It's built with Next.js 16
 (App Router) and deployed to **Cloudflare Workers via vinext**.
 
 - No accounts, no database. Wheels live in the visitor's browser (LocalStorage).
@@ -23,7 +24,7 @@ npm run dev            # Next.js dev server on http://localhost:3000
 | `npm test` | Unit tests (Vitest): RNG fairness, pointer alignment, share links, CSV/JSON, tools, translation completeness |
 | `npm run typecheck` | Generate route types and run `tsc` |
 | `npm run dev:vinext` | vinext dev server (Vite + workerd) on http://localhost:3001 |
-| `npm run build:vinext` | **Cloudflare Workers production build** (prerenders all ~406 routes in 5 languages) |
+| `npm run build:vinext` | **Cloudflare Workers production build** (prerenders ~811 routes in 10 languages) |
 | `npm run start:vinext` | Serve the Workers build locally **in the real Workers runtime** (workerd) on :4173 |
 | `npm run check:links -- http://localhost:4173` | Crawl the sitemap and verify every link, H1, title, description, canonical and 404 |
 | `npm run deploy` | Build + deploy production Worker |
@@ -53,12 +54,12 @@ inlined at **build time**, so rebuild after changing them.
 src/
   app/                      Routes (App Router) — two root layouts
     (en)/                   English, unprefixed: /, /coin-flip/, /templates/…  (one folder per landing page)
-    (intl)/[lang]/          vi / es / fr / pt: /vi/, /vi/coin-flip/, …
+    (intl)/[lang]/          every other locale: /vi/, /ja/coin-flip/, /ar/templates/, …
     api/youtube-comments/   Worker route proxying the YouTube Data API
     global-not-found.tsx    404 document for URLs outside both layouts
     sitemap.ts robots.ts manifest.ts globals.css
   routes/                   Shared page modules both route groups render (home, landing, templates, blog…)
-  i18n/                     Locale config, UI dictionaries (en/vi/es/fr/pt), client provider, error codes
+  i18n/                     Locale config, UI dictionaries (one per locale), client provider, error codes
   content/                  Localized page copy per locale (vi/, es/, fr/, pt/), merged onto the English base
   components/
     wheel/                  WheelApp (orchestrator), WheelStage (canvas + animation), renderer, dialogs
@@ -95,7 +96,7 @@ for server features later (cloud-saved wheels, AI-generated templates, etc.).
 
 ## Languages
 
-English is served without a prefix; other languages live under `/vi/`, `/es/`, `/fr/`, `/pt/` with the same
+English is served without a prefix; other languages live under `/vi/`, `/es/`, `/fr/`, `/pt/`, `/de/`, `/ja/`, `/ko/`, `/zh/`, `/ar/` with the same
 slugs. Every page has a self-canonical plus `hreflang` alternates (and `x-default` → English), the sitemap
 lists all languages, and `/en/...` redirects to the unprefixed URL. The header has a language selector
 with flags that keeps you on the same page.
@@ -103,10 +104,17 @@ with flags that keeps you on the same page.
 English pages are real static routes in `src/app/(en)/` rather than a rewrite to `/en/`, because only real
 static paths are served from the Workers static-assets cache (rewritten URLs render on every request).
 
-**Adding a language** (e.g. `de`):
-1. Add it to `locales` and `localeMeta` (name, hreflang, flag) in `src/i18n/config.ts`; add a flag in `src/components/layout/flag.tsx`.
-2. Create `src/i18n/dictionaries/de.ts` (copy `en.ts`) and register it in `src/i18n/server.ts`.
-3. Create `src/content/de/` (copy `src/content/vi/`, translate) and register it in `src/content/index.ts`.
+**Right-to-left (Arabic).** `localeMeta.dir` sets `<html dir>`. Layout uses logical utilities (`ms-*`, `pe-*`,
+`start-*`, `text-start`) so it mirrors automatically; use `rtl:` variants for anything directional (arrow icons,
+the toggle knob). Letter-spacing is reset for Arabic in `globals.css` because it breaks cursive joins.
+
+**Search snippet lengths** are measured in display width (`displayWidth()` in `src/lib/text.ts`): CJK characters
+count double, so `tests/seo-lengths.test.ts` applies the same limits to every script.
+
+**Adding a language** (e.g. `it`):
+1. Add it to `locales` and `localeMeta` (name, hreflang, flag, dir) in `src/i18n/config.ts`; add a flag in `src/components/layout/flag.tsx`.
+2. Create `src/i18n/dictionaries/it.ts` (copy `en.ts`) and register it in `src/i18n/server.ts`.
+3. Create `src/content/it/` (copy `src/content/vi/`, translate) and register it in `src/content/index.ts`.
 4. Run `npm test` and `npm run check:links`. The `(intl)/[lang]` routes prerender every non-English locale automatically.
 
 ## Future expansion

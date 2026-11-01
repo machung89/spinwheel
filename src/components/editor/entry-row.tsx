@@ -47,7 +47,7 @@ function WeightInput({ value, label, title, onCommit }: { value: number; label: 
       onBlur={() => setDraft(String(value))}
       aria-label={label}
       title={title}
-      className="h-8 w-16 px-2 text-right tabular-nums"
+      className="h-8 w-16 px-2 text-end tabular-nums"
     />
   );
 }
@@ -146,7 +146,7 @@ export const EntryRow = memo(function EntryRow({ entry, index, color, wheelId, w
                 </form>
               </>
             )}
-            <Button size="sm" variant="ghost" className="ml-auto" onClick={() => dispatch({ type: "duplicateEntry", wheelId, entryId: entry.id })}>
+            <Button size="sm" variant="ghost" className="ms-auto" onClick={() => dispatch({ type: "duplicateEntry", wheelId, entryId: entry.id })}>
               <Copy /> {e.duplicate}
             </Button>
           </div>

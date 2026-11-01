@@ -75,7 +75,7 @@ export function RelatedLinks({ title, links }: { title: string; links: RelatedLi
           <li key={l.href}>
             <Link href={l.href} className="group flex h-full flex-col rounded-2xl border border-border bg-card p-4 transition-shadow hover:shadow-md">
               <span className="flex items-center justify-between font-semibold">
-                {l.title} <ArrowRight className="size-4 text-muted-fg transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                {l.title} <ArrowRight className="size-4 text-muted-fg transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5" aria-hidden="true" />
               </span>
               {l.description && <span className="mt-1 text-sm text-muted-fg">{l.description}</span>}
             </Link>

@@ -19,7 +19,7 @@ export function Breadcrumbs({ items, locale, t }: { items: Crumb[]; locale: Loca
         <ol className="flex flex-wrap items-center gap-1">
           {all.map((c, i) => (
             <li key={c.path} className="flex items-center gap-1">
-              {i > 0 && <ChevronRight className="size-3.5" aria-hidden="true" />}
+              {i > 0 && <ChevronRight className="size-3.5 rtl:-scale-x-100" aria-hidden="true" />}
               {i === all.length - 1 ? (
                 <span aria-current="page" className="font-medium text-fg">
                   {c.name}

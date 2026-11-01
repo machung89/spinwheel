@@ -22,14 +22,14 @@ export function Header({ locale, t }: { locale: Locale; t: Dict }) {
           <Logo />
         </Link>
 
-        <nav aria-label={t.nav.mainNav} className="ml-4 hidden items-center gap-1 lg:flex">
+        <nav aria-label={t.nav.mainNav} className="ms-4 hidden items-center gap-1 lg:flex">
           {mainNav.map((item) =>
             item.key === "tools" ? (
               <details key={item.href} className="group relative">
                 <summary className="flex cursor-pointer list-none items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-muted-fg hover:bg-muted hover:text-fg [&::-webkit-details-marker]:hidden">
                   {t.nav.tools} <ChevronDown className="size-4 transition-transform group-open:rotate-180" />
                 </summary>
-                <div className="absolute top-full left-0 mt-2 w-64 rounded-2xl border border-border bg-card p-2 shadow-xl">
+                <div className="absolute top-full start-0 mt-2 w-64 rounded-2xl border border-border bg-card p-2 shadow-xl">
                   {tools.map((tool) => (
                     <Link key={tool.href} href={L(tool.href)} className="block rounded-lg px-3 py-2 text-sm font-medium hover:bg-muted">
                       {tool.name}
@@ -48,7 +48,7 @@ export function Header({ locale, t }: { locale: Locale; t: Dict }) {
           )}
         </nav>
 
-        <div className="ml-auto flex items-center gap-1">
+        <div className="ms-auto flex items-center gap-1">
           <LanguageSelector />
           <ThemeToggle label={t.nav.toggleTheme} />
 

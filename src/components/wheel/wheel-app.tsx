@@ -298,7 +298,7 @@ export function WheelApp({ storageKey, preset, templateSlug }: Props) {
               {t.wheel.tipBefore} <kbd className="rounded border border-border px-1">{t.wheel.spaceKey}</kbd> {t.wheel.tipAfter}
             </p>
             {fullscreen === "css" && (
-              <Button className="absolute top-3 right-3" size="icon" onClick={toggleFullscreen} aria-label={t.wheel.exitFullscreen}>
+              <Button className="absolute end-3 top-3" size="icon" onClick={toggleFullscreen} aria-label={t.wheel.exitFullscreen}>
                 <X />
               </Button>
             )}

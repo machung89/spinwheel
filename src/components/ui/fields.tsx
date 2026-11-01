@@ -16,7 +16,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaHTMLAttributes<H
 
 export function Select({ className, children, ...props }: SelectHTMLAttributes<HTMLSelectElement>) {
   return (
-    <select className={cn(fieldBase, "h-9 cursor-pointer pr-8", className)} {...props}>
+    <select className={cn(fieldBase, "h-9 cursor-pointer pe-8", className)} {...props}>
       {children}
     </select>
   );
@@ -67,7 +67,7 @@ export function Switch({
           checked ? "bg-primary" : "bg-border-strong",
         )}
       >
-        <span className={cn("inline-block h-5 w-5 rounded-full bg-white shadow transition-transform", checked ? "translate-x-[18px]" : "translate-x-0.5")} />
+        <span className={cn("inline-block h-5 w-5 rounded-full bg-white shadow transition-transform", checked ? "translate-x-[18px] rtl:-translate-x-[18px]" : "translate-x-0.5 rtl:-translate-x-0.5")} />
       </button>
     </div>
   );

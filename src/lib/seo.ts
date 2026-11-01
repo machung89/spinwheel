@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl, siteConfig } from "./site";
+import { displayWidth } from "./text";
 import { defaultLocale, localeMeta, localizePath, locales, type Locale } from "@/i18n/config";
 
 interface PageMeta {
@@ -24,11 +25,11 @@ export function languageAlternates(path: string, available: readonly Locale[] = 
   return map;
 }
 
-/** Google shows ~60 characters of a title; the " | Brand" suffix is dropped when it would push past that. */
+/** Google shows ~60 characters (~30 CJK) of a title; the " | Brand" suffix is dropped when it would push past that. */
 const TITLE_MAX = 60;
 export function fitTitle(title: string): string {
   const suffix = ` | ${siteConfig.name}`;
-  return title.length > TITLE_MAX && title.endsWith(suffix) ? title.slice(0, -suffix.length) : title;
+  return displayWidth(title) > TITLE_MAX && title.endsWith(suffix) ? title.slice(0, -suffix.length) : title;
 }
 
 /** Complete metadata (canonical, hreflang, Open Graph, Twitter) for an indexable page. */

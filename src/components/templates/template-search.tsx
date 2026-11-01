@@ -32,14 +32,14 @@ export function TemplateSearch({ containerId }: { containerId: string }) {
 
   return (
     <div className="relative max-w-md">
-      <Search className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted-fg" aria-hidden="true" />
+      <Search className="pointer-events-none absolute top-1/2 start-3.5 size-4 -translate-y-1/2 text-muted-fg" aria-hidden="true" />
       <input
         type="search"
         value={q}
         onChange={(e) => setQ(e.target.value)}
         placeholder={t.templates.searchPlaceholder}
         aria-label={t.templates.searchLabel}
-        className="h-12 w-full rounded-2xl border border-border bg-card pr-4 pl-10 text-base focus:border-primary focus:ring-2 focus:ring-primary/25 focus:outline-none"
+        className="h-12 w-full rounded-2xl border border-border bg-card pe-4 ps-10 text-base focus:border-primary focus:ring-2 focus:ring-primary/25 focus:outline-none"
       />
       <p className="mt-2 h-4 text-xs text-muted-fg" aria-live="polite">
         {count !== null && fmt(t.templates.found, { n: count })}

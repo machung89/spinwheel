@@ -120,7 +120,7 @@ body {
 }
 .prose-content ul,
 .prose-content ol {
-  padding-left: 1.25rem;
+  padding-inline-start: 1.25rem;
 }
 .prose-content ul {
   list-style: disc;
@@ -210,8 +210,11 @@ body {
 }
 .lang-panel {
   position: absolute;
-  right: 0;
+  inset-inline-end: 0;
   top: calc(100% + 0.5rem);
+  /* Ten languages: scroll on short screens instead of running off the bottom. */
+  max-height: min(40rem, calc(100dvh - 5rem));
+  overflow-y: auto;
   z-index: 60;
   width: 15rem;
   border-radius: 1.25rem;
@@ -222,6 +225,20 @@ body {
     0 20px 40px -12px rgb(15 17 40 / 0.25),
     0 4px 12px -4px rgb(15 17 40 / 0.12);
   transform-origin: top right;
+}
+[dir="rtl"] .lang-panel {
+  transform-origin: top left;
+}
+
+/* German compound words can be wider than a phone screen; let headings hyphenate instead of overflowing. */
+:lang(de) :is(h1, h2, h3) {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* Arabic is cursive: letter-spacing breaks the joins between letters, so tracking utilities are reset. */
+:lang(ar) [class*="tracking-"] {
+  letter-spacing: normal;
 }
 .lang-menu[open] .lang-panel {
   animation: lang-pop 0.16s cubic-bezier(0.2, 0.9, 0.3, 1.2);

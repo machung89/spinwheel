@@ -163,8 +163,8 @@ export function EntryEditor({ wheel, wheelCount, dispatch, notify }: Props) {
       </div>
 
       {(weighted || tally) && (
-        <div className="flex justify-end gap-3 pr-[6.5rem] text-[11px] font-semibold tracking-wide text-muted-fg uppercase">
-          {weighted && <span className="w-16 text-right">{e.weight}</span>}
+        <div className="flex justify-end gap-3 pe-[6.5rem] text-[11px] font-semibold tracking-wide text-muted-fg uppercase">
+          {weighted && <span className="w-16 text-end">{e.weight}</span>}
           {tally && <span className="w-8 text-center">{e.wins}</span>}
         </div>
       )}
