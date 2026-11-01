@@ -13,6 +13,7 @@ import { RichText } from "@/components/layout/rich-text";
 import { storageKeyFor } from "@/components/layout/landing-view";
 import { JsonLd, webAppSchema } from "@/components/seo/json-ld";
 import { buttonClass } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site";
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -174,7 +175,7 @@ export default async function HomePage({ params }: Props) {
         </section>
       </Container>
 
-      <JsonLd data={webAppSchema({ name: "WhirlPick", description: h.description, path: L("/"), inLanguage: localeMeta[locale].hreflang })} />
+      <JsonLd data={webAppSchema({ name: siteConfig.name, description: h.description, path: L("/"), inLanguage: localeMeta[locale].hreflang })} />
     </>
   );
 }

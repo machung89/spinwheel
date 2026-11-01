@@ -1,6 +1,6 @@
 # Deploying to Cloudflare Workers
 
-WhirlPick deploys with **vinext** (`vinext`, `@vinext/cloudflare`, `cf`), Cloudflare's Vite-based
+SpinWheelGe deploys with **vinext** (`vinext`, `@vinext/cloudflare`, `cf`), Cloudflare's Vite-based
 implementation of the Next.js API. No Docker, no VPS, and no Node.js server at runtime.
 
 ## Compatibility notes (checked 2026-11-01, vinext 1.4, Next.js 16.4)

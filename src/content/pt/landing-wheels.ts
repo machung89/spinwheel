@@ -497,7 +497,7 @@ export const landingWheels: Record<string, LandingText> = {
     ],
     faqs: [
       { q: "Posso colocar minha lista de filmes na roleta?", a: "Sim. Copie os títulos em Colar lista, um por linha. A roleta comporta até 1.000 títulos." },
-      { q: "Tem uma roleta só da Netflix?", a: "Experimente o modelo Gêneros da Netflix, com categorias populares. O WhirlPick não tem vínculo com a Netflix." },
+      { q: "Tem uma roleta só da Netflix?", a: "Experimente o modelo Gêneros da Netflix, com categorias populares. O SpinWheelGe não tem vínculo com a Netflix." },
       { q: "Como evito um filme que já vimos?", a: "Use o modo Eliminação ou toque no ícone de olho para esconder os vistos." },
     ],
   },

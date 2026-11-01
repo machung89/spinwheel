@@ -284,7 +284,7 @@ export const landingTools: Record<string, LandingText> = {
       { q: "¿Tengo que iniciar sesión en YouTube?", a: "No. El selector solo lee comentarios públicos, así que no hace falta iniciar sesión." },
       { q: "¿Cuántos comentarios puede cargar?", a: "Hasta 4.000 comentarios principales por video. Para sorteos más grandes, pega los comentarios desde una exportación." },
       { q: "¿Se incluyen las respuestas?", a: "Solo se cargan los comentarios principales, que es la regla habitual en los sorteos por comentarios." },
-      { q: "¿WhirlPick está afiliado a YouTube?", a: "No. WhirlPick es una herramienta independiente que usa la API pública de YouTube. YouTube es una marca de Google LLC." },
+      { q: "¿SpinWheelGe está afiliado a YouTube?", a: "No. SpinWheelGe es una herramienta independiente que usa la API pública de YouTube. YouTube es una marca de Google LLC." },
     ],
   },
 };

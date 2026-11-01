@@ -1,7 +1,7 @@
 import type { AppState } from "@/types/wheel";
 import { sanitizeAppState } from "@/features/wheel-engine/validate";
 
-const PREFIX = "whirlpick:v1:";
+const PREFIX = "spinwheelge:v1:";
 
 export function safeGet(key: string): string | null {
   try {

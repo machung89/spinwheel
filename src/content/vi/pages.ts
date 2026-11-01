@@ -2,11 +2,11 @@ import type { PagesContent } from "../types";
 
 export const pages: PagesContent = {
   about: {
-    title: "Giới thiệu WhirlPick",
-    seoTitle: "Giới thiệu WhirlPick – Vòng quay ngẫu nhiên miễn phí, công bằng",
-    description: "WhirlPick làm vòng quay và công cụ ngẫu nhiên miễn phí, công bằng và riêng tư cho giáo viên, gia đình, nhà sáng tạo và các nhóm làm việc.",
+    title: "Giới thiệu SpinWheelGe",
+    seoTitle: "Giới thiệu SpinWheelGe – Vòng quay ngẫu nhiên miễn phí, công bằng",
+    description: "SpinWheelGe làm vòng quay và công cụ ngẫu nhiên miễn phí, công bằng và riêng tư cho giáo viên, gia đình, nhà sáng tạo và các nhóm làm việc.",
     blocks: [
-      { p: "WhirlPick là bộ sưu tập miễn phí các vòng quay và công cụ ngẫu nhiên cho những quyết định nhỏ trong cuộc sống hằng ngày — ai trả lời câu tiếp theo, ăn ở đâu, khách trúng giải gì và ai vào đội nào." },
+      { p: "SpinWheelGe là bộ sưu tập miễn phí các vòng quay và công cụ ngẫu nhiên cho những quyết định nhỏ trong cuộc sống hằng ngày — ai trả lời câu tiếp theo, ăn ở đâu, khách trúng giải gì và ai vào đội nào." },
       { h2: "Điều chúng tôi tin tưởng" },
       {
         ul: [
@@ -18,16 +18,16 @@ export const pages: PagesContent = {
       },
       { h2: "Cách tạo ra sự ngẫu nhiên" },
       { p: "Khi bạn quay, chúng tôi lấy các bit ngẫu nhiên từ Web Crypto API và chuyển chúng thành lựa chọn bằng kỹ thuật lấy mẫu loại bỏ, tránh được sai lệch nhỏ mà kiểu code “số ngẫu nhiên chia lấy dư cho độ dài danh sách” gặp phải. Ở chế độ có trọng số, mỗi mục nhận số vé tỉ lệ với trọng số và một vé được rút. Sau đó chúng tôi tính chính xác vòng quay phải xoay bao xa để ô trúng dừng dưới kim chỉ." },
-      { h2: "Ai đang dùng WhirlPick" },
+      { h2: "Ai đang dùng SpinWheelGe" },
       { p: "Giáo viên dùng để gọi phát biểu và phân công trực nhật, nhà sáng tạo nội dung dùng cho minigame trực tiếp, đội ngũ sự kiện dùng vòng quay giải thưởng tại gian hàng, và các gia đình dùng để chốt câu “tối nay ăn gì?”. Nếu bạn có ý tưởng về mẫu hay công cụ mới, hãy cho chúng tôi biết ở [trang liên hệ](/contact/)." },
     ],
   },
   contact: {
     title: "Liên hệ",
-    seoTitle: "Liên hệ WhirlPick – Góp ý, câu hỏi và hỗ trợ",
-    description: "Liên hệ đội ngũ WhirlPick để hỏi đáp, góp ý, đề xuất mẫu vòng quay, báo lỗi hoặc yêu cầu về quyền riêng tư.",
+    seoTitle: "Liên hệ SpinWheelGe – Góp ý, câu hỏi và hỗ trợ",
+    description: "Liên hệ đội ngũ SpinWheelGe để hỏi đáp, góp ý, đề xuất mẫu vòng quay, báo lỗi hoặc yêu cầu về quyền riêng tư.",
     blocks: [
-      { p: "Chúng tôi đọc mọi tin nhắn. Dù bạn phát hiện lỗi, có ý tưởng cho mẫu vòng quay mới hay muốn kể chúng tôi nghe bạn dùng WhirlPick trong lớp học ra sao, chúng tôi đều rất muốn nghe." },
+      { p: "Chúng tôi đọc mọi tin nhắn. Dù bạn phát hiện lỗi, có ý tưởng cho mẫu vòng quay mới hay muốn kể chúng tôi nghe bạn dùng SpinWheelGe trong lớp học ra sao, chúng tôi đều rất muốn nghe." },
       { h2: "Thông tin nên kèm theo" },
       {
         ul: [
@@ -42,8 +42,8 @@ export const pages: PagesContent = {
   },
   privacy: {
     title: "Chính sách quyền riêng tư",
-    seoTitle: "Chính sách quyền riêng tư | WhirlPick",
-    description: "Cách WhirlPick xử lý dữ liệu: vòng quay ở lại trong trình duyệt, cookie phân tích và quảng cáo tùy chọn theo sự đồng ý, và quyền riêng tư của bạn.",
+    seoTitle: "Chính sách quyền riêng tư | SpinWheelGe",
+    description: "Cách SpinWheelGe xử lý dữ liệu: vòng quay ở lại trong trình duyệt, cookie phân tích và quảng cáo tùy chọn theo sự đồng ý, và quyền riêng tư của bạn.",
     updated: "Cập nhật lần cuối: 1 tháng 11, 2026",
     blocks: [
       { p: "Chính sách này giải thích {site} (“chúng tôi”) thu thập thông tin gì khi bạn dùng {domain} (“Trang”), cách sử dụng và lựa chọn của bạn. Tóm tắt: vòng quay và danh sách bạn tạo ở lại trong trình duyệt, còn cookie phân tích và quảng cáo chỉ được dùng theo lựa chọn của bạn." },
@@ -79,8 +79,8 @@ export const pages: PagesContent = {
   },
   terms: {
     title: "Điều khoản sử dụng",
-    seoTitle: "Điều khoản sử dụng | WhirlPick",
-    description: "Các điều khoản áp dụng khi bạn dùng vòng quay và công cụ ngẫu nhiên miễn phí của WhirlPick, gồm cách sử dụng chấp nhận được, minigame và miễn trừ trách nhiệm.",
+    seoTitle: "Điều khoản sử dụng | SpinWheelGe",
+    description: "Các điều khoản áp dụng khi bạn dùng vòng quay và công cụ ngẫu nhiên miễn phí của SpinWheelGe, gồm cách sử dụng chấp nhận được, minigame và miễn trừ trách nhiệm.",
     updated: "Cập nhật lần cuối: 1 tháng 11, 2026",
     blocks: [
       { p: "Các điều khoản này áp dụng khi bạn dùng {site} (“Trang”). Khi sử dụng Trang, bạn đồng ý với các điều khoản. Nếu không đồng ý, vui lòng không sử dụng Trang." },

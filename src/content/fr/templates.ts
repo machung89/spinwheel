@@ -255,7 +255,7 @@ export const templates: Record<string, TemplateText> = {
     description: "Tirez une catégorie pour arrêter de défiler sans fin.",
     seoTitle: "Roue des genres Netflix – Que regarder ce soir",
     metaDescription: "Tirez un genre à parcourir sur Netflix ce soir et arrêtez le défilement sans fin. Roue des genres gratuite. Non affiliée à Netflix.",
-    intro: "Cette roue utilise de grandes catégories présentes sur la plupart des plateformes. Lancez, ouvrez la catégorie dans l’appli et choisissez parmi les cinq premiers titres : pas de défilement au-delà de la deuxième ligne. WhirlPick n’est pas affilié à Netflix.",
+    intro: "Cette roue utilise de grandes catégories présentes sur la plupart des plateformes. Lancez, ouvrez la catégorie dans l’appli et choisissez parmi les cinq premiers titres : pas de défilement au-delà de la deuxième ligne. SpinWheelGe n’est pas affilié à Netflix.",
     tips: ["Règle : seulement la première ligne.", "Ajoutez une roue « film ou série ».", "Remplacez par des titres de votre liste pour choisir directement."],
     faqs: [
       { q: "Est-ce un outil officiel Netflix ?", a: "Non. C’est une roue indépendante qui suggère des genres. Netflix est une marque de Netflix, Inc." },

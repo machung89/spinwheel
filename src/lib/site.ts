@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "WhirlPick",
+  name: "SpinWheelGe",
   tagline: "Free Random Picker Wheel",
   url: (process.env.NEXT_PUBLIC_SITE_URL || "https://spinwheelge.com").replace(/\/$/, ""),
   description:

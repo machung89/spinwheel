@@ -9,6 +9,7 @@ import { articleSchema, JsonLd } from "@/components/seo/json-ld";
 import { Container, RelatedLinks } from "@/components/layout/content-blocks";
 import { BlockList } from "@/components/layout/block-list";
 import { AdSlot } from "@/components/ads/ad-slot";
+import { siteConfig } from "@/lib/site";
 
 export function blogPostParams(locs: readonly Locale[]) {
   return locs.flatMap((lang) => postsFor(lang).map((p) => ({ lang, slug: p.slug })));
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!p) return {};
   return pageMetadata({
     locale,
-    title: `${p.title} | WhirlPick`,
+    title: `${p.title} | ${siteConfig.name}`,
     description: p.description,
     path: `/blog/${p.slug}/`,
     type: "article",

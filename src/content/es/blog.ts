@@ -1,6 +1,6 @@
 import type { BlogPost } from "@/data/blog/types";
 
-const author = "El equipo de WhirlPick";
+const author = "El equipo de SpinWheelGe";
 
 export const posts: BlogPost[] = [
   {
@@ -30,7 +30,7 @@ export const posts: BlogPost[] = [
       { h2: "3. Grupos y parejas al azar" },
       { p: "Dejar que los alumnos elijan pareja suele dejar fuera a los mismos. Para parejas y grupos pequeños, una ruleta sirve, pero el [generador de equipos](/team-generator/) es más rápido: pega tu lista una vez y reparte a los alumnos en grupos equilibrados con un clic." },
       { h2: "4. Juegos de repaso con preguntas ocultas" },
-      { p: "Cada opción de una ruleta de WhirlPick puede llevar una actividad oculta: una pregunta, tarea o palabra que se revela solo cuando la ruleta para. Así los juegos de repaso casi no requieren preparación:" },
+      { p: "Cada opción de una ruleta de SpinWheelGe puede llevar una actividad oculta: una pregunta, tarea o palabra que se revela solo cuando la ruleta para. Así los juegos de repaso casi no requieren preparación:" },
       { ol: ["Crea una ruleta de temas o puntos (100, 200, 300…).", "Añade una pregunta en la actividad oculta de cada opción.", "Gira, revela la pregunta y deja que los equipos respondan.", "Usa el modo Marcador o el historial para llevar la puntuación."] },
       { h2: "5. Pausas activas y transiciones" },
       { p: "Cuando baja la energía después del almuerzo, dos minutos de movimiento pueden salvar la tarde. Pon actividades en una ruleta —saltos, baile congelado, estiramientos— y deja que un alumno gire. La [plantilla de pausas activas](/templates/classroom/brain-break-wheel/) es un buen comienzo." },
@@ -38,7 +38,7 @@ export const posts: BlogPost[] = [
       { p: "Una ruleta de nombres es una herramienta y, como toda herramienta, puede usarse bien o mal. Algunas pautas la mantienen positiva:" },
       { ul: ["Avisa con antelación a los alumnos con mucha ansiedad, o permite responder con un compañero.", "Empieza con preguntas fáciles para que se acostumbren.", "Nunca uses la ruleta para elegir castigos.", "Escribe bien los nombres y usa los nombres preferidos: importa."] },
       { h2: "Privacidad para docentes" },
-      { p: "Los nombres de los alumnos son información personal, así que conviene saber dónde van. WhirlPick guarda tus ruletas solo en el almacenamiento local del navegador. No hay cuentas ni base de datos en el servidor, y los enlaces solo se crean si pulsas Compartir. Si compartes una ruleta con alumnos, el enlace contiene los nombres, así que compártelo solo con quien deba verlos." },
+      { p: "Los nombres de los alumnos son información personal, así que conviene saber dónde van. SpinWheelGe guarda tus ruletas solo en el almacenamiento local del navegador. No hay cuentas ni base de datos en el servidor, y los enlaces solo se crean si pulsas Compartir. Si compartes una ruleta con alumnos, el enlace contiene los nombres, así que compártelo solo con quien deba verlos." },
       { h2: "Lista rápida de preparación" },
       { ol: ["Abre la ruleta de nombres y pega tu lista (un nombre por línea).", "Cambia al modo Eliminación en la pestaña Giro.", "Elige un tema de color y activa el sonido.", "Pulsa pantalla completa al proyectar.", "Al final de la clase, pulsa Restaurar todo para mañana."] },
     ],
@@ -95,13 +95,13 @@ export const posts: BlogPost[] = [
       { p: "El [selector de comentarios de YouTube](/youtube-comment-picker/) hace los pasos 2 a 4 automáticamente para videos de YouTube: carga comentarios, filtra por palabra clave, excluye las cuentas que indiques y limita a una participación por persona." },
       { h2: "Paso 4: Sortea ante la cámara" },
       { p: "La transparencia es la mejor defensa contra las acusaciones. Sortea donde los participantes lo vean: un directo, una grabación de pantalla o una historia. Una herramienta visual como una [ruleta de nombres](/wheel-of-names/) o una [ruleta de premios](/prize-wheel/) hace el sorteo fácil de seguir y más emocionante." },
-      { p: "Asegúrate de que la herramienta sea realmente aleatoria. WhirlPick elige al ganador con el generador criptográfico del navegador antes de que empiece la animación, así que el resultado no depende de cuándo ni de lo rápido que hagas clic." },
+      { p: "Asegúrate de que la herramienta sea realmente aleatoria. SpinWheelGe elige al ganador con el generador criptográfico del navegador antes de que empiece la animación, así que el resultado no depende de cuándo ni de lo rápido que hagas clic." },
       { h2: "Paso 5: Saca suplentes en el mismo momento" },
       { p: "Los ganadores no siempre responden. Sacar dos o tres suplentes (en orden) en la misma sesión grabada evita un segundo sorteo que podría cuestionarse. En una ruleta, quita a cada ganador y vuelve a girar; el historial guarda el orden con fecha y hora." },
       { h2: "Paso 6: Contacta, verifica y anuncia" },
       { ul: ["Contacta al ganador por el medio indicado en las reglas.", "Cuidado con los suplantadores: avisa de que nunca pedirás pagos ni contraseñas.", "Verifica los requisitos (edad, ubicación) antes de enviar.", "Anuncia al ganador públicamente cuando acepte, con su permiso."] },
       { h2: "Paso 7: Guarda registros" },
-      { p: "Conserva las reglas, la lista final, la grabación y el historial del sorteo durante unos meses. Si alguien lo cuestiona, tendrás todo. En WhirlPick, exporta el historial a CSV justo después del sorteo." },
+      { p: "Conserva las reglas, la lista final, la grabación y el historial del sorteo durante unos meses. Si alguien lo cuestiona, tendrás todo. En SpinWheelGe, exporta el historial a CSV justo después del sorteo." },
       { tip: "Las probabilidades con pesos son geniales para ruletas de premios en eventos, pero en un sorteo con un solo premio todas las participaciones válidas deben tener la misma probabilidad. Usa el modo normal." },
     ],
   },
@@ -161,7 +161,7 @@ export const posts: BlogPost[] = [
       { h2: "Generador de equipos: dividir un grupo" },
       { p: "Cuando la decisión es «quién va con quién», un [generador de equipos](/team-generator/) gana a girar una ruleta muchas veces. Pega nombres, fija el número de equipos y reparte a todos en grupos equilibrados en un paso." },
       { h2: "¿Qué hace fiable a un aleatorizador?" },
-      { p: "Por dentro, muchas herramientas online usan una función pseudoaleatoria básica que sirve para juegos pero no está diseñada para ser impredecible. Las mejores usan una fuente criptográficamente segura —en navegadores, la Web Crypto API— y un método sin sesgos para convertir bits en una elección. Todas las herramientas de WhirlPick funcionan así, y la ruleta decide el ganador antes de la animación para que lo visual no influya." },
+      { p: "Por dentro, muchas herramientas online usan una función pseudoaleatoria básica que sirve para juegos pero no está diseñada para ser impredecible. Las mejores usan una fuente criptográficamente segura —en navegadores, la Web Crypto API— y un método sin sesgos para convertir bits en una elección. Todas las herramientas de SpinWheelGe funcionan así, y la ruleta decide el ganador antes de la animación para que lo visual no influya." },
       { h2: "Guía rápida" },
       { ul: ["Dos opciones → moneda", "Una pregunta de sí o no → selector de sí o no", "3–20 opciones con público → ruleta", "Opciones de distinta importancia → ruleta con pesos", "Rangos de números grandes → generador de números", "Dividir personas en grupos → generador de equipos"] },
       { tip: "Si el resultado te decepciona, es información útil. Las herramientas aleatorias son geniales para revelar lo que querías desde el principio." },

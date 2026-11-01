@@ -255,7 +255,7 @@ export const templates: Record<string, TemplateText> = {
     description: "Gira una categoría para dejar de navegar sin fin.",
     seoTitle: "Ruleta de géneros de Netflix – Qué ver esta noche",
     metaDescription: "Gira un género para buscar en Netflix esta noche y acaba con el scroll infinito. Ruleta de géneros gratis. No afiliada a Netflix.",
-    intro: "Esta ruleta usa categorías amplias que encontrarás en casi todas las plataformas. Gira, abre esa categoría en tu app y elige uno de los cinco primeros títulos: nada de bajar de la segunda fila. WhirlPick no está afiliado a Netflix.",
+    intro: "Esta ruleta usa categorías amplias que encontrarás en casi todas las plataformas. Gira, abre esa categoría en tu app y elige uno de los cinco primeros títulos: nada de bajar de la segunda fila. SpinWheelGe no está afiliado a Netflix.",
     tips: ["Pon una regla: solo de la primera fila.", "Añade una ruleta de «película o serie».", "Cambia por títulos de tu lista para elegir directo."],
     faqs: [
       { q: "¿Es una herramienta oficial de Netflix?", a: "No. Es una ruleta independiente que sugiere géneros. Netflix es una marca de Netflix, Inc." },

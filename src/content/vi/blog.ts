@@ -1,6 +1,6 @@
 import type { BlogPost } from "@/data/blog/types";
 
-const author = "Đội ngũ WhirlPick";
+const author = "Đội ngũ SpinWheelGe";
 
 export const posts: BlogPost[] = [
   {
@@ -30,7 +30,7 @@ export const posts: BlogPost[] = [
       { h2: "3. Chia nhóm và ghép cặp ngẫu nhiên" },
       { p: "Để học sinh tự chọn bạn thường khiến vài em bị bỏ lại. Với cặp đôi và nhóm nhỏ, vòng quay dùng được, nhưng [chia đội ngẫu nhiên](/team-generator/) nhanh hơn: dán danh sách lớp một lần là học sinh được chia thành các nhóm cân bằng chỉ với một cú bấm." },
       { h2: "4. Trò chơi ôn tập với câu hỏi ẩn" },
-      { p: "Mỗi mục trên vòng quay WhirlPick có thể kèm nội dung ẩn — câu hỏi, nhiệm vụ hay từ vựng chỉ hiện sau khi vòng quay dừng. Nhờ vậy trò chơi ôn tập gần như không tốn công chuẩn bị:" },
+      { p: "Mỗi mục trên vòng quay SpinWheelGe có thể kèm nội dung ẩn — câu hỏi, nhiệm vụ hay từ vựng chỉ hiện sau khi vòng quay dừng. Nhờ vậy trò chơi ôn tập gần như không tốn công chuẩn bị:" },
       { ol: [
         "Tạo vòng quay chủ đề hoặc mức điểm (100, 200, 300…).",
         "Thêm câu hỏi vào ô nội dung ẩn của từng mục.",
@@ -48,7 +48,7 @@ export const posts: BlogPost[] = [
         "Viết đúng tên và dùng tên các em thích được gọi — điều đó rất quan trọng.",
       ] },
       { h2: "Lưu ý quyền riêng tư cho giáo viên" },
-      { p: "Tên học sinh là thông tin cá nhân, nên bạn cần biết chúng đi đâu. WhirlPick chỉ lưu vòng quay trong bộ nhớ cục bộ của trình duyệt. Không có tài khoản, không có cơ sở dữ liệu phía máy chủ, và liên kết chia sẻ chỉ được tạo khi bạn nhấn Chia sẻ. Nếu chia sẻ vòng quay cho học sinh, liên kết sẽ chứa tên, vì vậy chỉ gửi cho người nên xem." },
+      { p: "Tên học sinh là thông tin cá nhân, nên bạn cần biết chúng đi đâu. SpinWheelGe chỉ lưu vòng quay trong bộ nhớ cục bộ của trình duyệt. Không có tài khoản, không có cơ sở dữ liệu phía máy chủ, và liên kết chia sẻ chỉ được tạo khi bạn nhấn Chia sẻ. Nếu chia sẻ vòng quay cho học sinh, liên kết sẽ chứa tên, vì vậy chỉ gửi cho người nên xem." },
       { h2: "Danh sách chuẩn bị nhanh" },
       { ol: [
         "Mở vòng quay tên và dán danh sách lớp (mỗi dòng một tên).",
@@ -181,7 +181,7 @@ export const posts: BlogPost[] = [
       { p: "[Công cụ chọn bình luận YouTube](/youtube-comment-picker/) tự làm các bước 2 đến 4 cho video YouTube: tải bình luận, lọc theo từ khóa, loại tài khoản bạn liệt kê và giới hạn mỗi người một lượt." },
       { h2: "Bước 4: Rút thăm trước ống kính" },
       { p: "Minh bạch là cách phòng thủ tốt nhất trước nghi ngờ. Hãy rút ở nơi người chơi thấy được — livestream, video quay màn hình đăng sau đó, hoặc story. Một công cụ trực quan như [vòng quay tên](/wheel-of-names/) hay [vòng quay giải thưởng](/prize-wheel/) giúp lượt rút dễ theo dõi và hấp dẫn hơn." },
-      { p: "Hãy chắc chắn công cụ bạn dùng ngẫu nhiên thật. WhirlPick chọn người thắng bằng bộ sinh số ngẫu nhiên mật mã học của trình duyệt trước khi hiệu ứng vòng quay bắt đầu, nên kết quả không bị ảnh hưởng bởi thời điểm hay tốc độ bạn bấm." },
+      { p: "Hãy chắc chắn công cụ bạn dùng ngẫu nhiên thật. SpinWheelGe chọn người thắng bằng bộ sinh số ngẫu nhiên mật mã học của trình duyệt trước khi hiệu ứng vòng quay bắt đầu, nên kết quả không bị ảnh hưởng bởi thời điểm hay tốc độ bạn bấm." },
       { h2: "Bước 5: Rút người dự phòng cùng lúc" },
       { p: "Người thắng không phải lúc nào cũng phản hồi. Rút hai, ba người dự phòng (theo thứ tự) ngay trong buổi quay sẽ tránh được lượt rút thứ hai dễ bị nghi ngờ. Trên vòng quay, loại từng người thắng sau khi rút rồi quay tiếp; danh sách lịch sử giữ đúng thứ tự kèm thời gian." },
       { h2: "Bước 6: Liên hệ, xác minh và công bố" },
@@ -192,7 +192,7 @@ export const posts: BlogPost[] = [
         "Công bố người thắng sau khi họ đã nhận giải, khi được họ đồng ý.",
       ] },
       { h2: "Bước 7: Lưu hồ sơ" },
-      { p: "Lưu luật chơi, danh sách cuối cùng, video và lịch sử rút thăm trong vài tháng. Nếu ai đó khiếu nại, bạn có đủ mọi thứ cần thiết. Trên WhirlPick, hãy xuất lịch sử ra tệp CSV ngay sau khi rút." },
+      { p: "Lưu luật chơi, danh sách cuối cùng, video và lịch sử rút thăm trong vài tháng. Nếu ai đó khiếu nại, bạn có đủ mọi thứ cần thiết. Trên SpinWheelGe, hãy xuất lịch sử ra tệp CSV ngay sau khi rút." },
       { tip: "Tỉ lệ có trọng số rất hợp với vòng quay giải thưởng tại sự kiện, nhưng với minigame chỉ có một giải, mọi lượt hợp lệ nên có cơ hội ngang nhau. Hãy dùng chế độ thường." },
     ],
   },
@@ -258,7 +258,7 @@ export const posts: BlogPost[] = [
       { h2: "Chia đội: chia một nhóm người" },
       { p: "Khi quyết định là “ai đi với ai”, [chia đội ngẫu nhiên](/team-generator/) tốt hơn quay vòng quay nhiều lần. Dán tên, đặt số đội, và mọi người được chia vào các nhóm cân bằng trong một bước." },
       { h2: "Điều gì khiến công cụ ngẫu nhiên đáng tin?" },
-      { p: "Bên trong, nhiều công cụ online đơn giản dùng hàm giả ngẫu nhiên cơ bản — đủ cho trò chơi nhưng không được thiết kế để khó đoán. Công cụ tốt hơn dùng nguồn an toàn chuẩn mật mã — trên trình duyệt là Web Crypto API — và phương pháp không thiên vị để biến các bit ngẫu nhiên thành lựa chọn. Mọi công cụ WhirlPick đều hoạt động như vậy, và vòng quay quyết định người thắng trước khi hiệu ứng bắt đầu để hình ảnh không ảnh hưởng kết quả." },
+      { p: "Bên trong, nhiều công cụ online đơn giản dùng hàm giả ngẫu nhiên cơ bản — đủ cho trò chơi nhưng không được thiết kế để khó đoán. Công cụ tốt hơn dùng nguồn an toàn chuẩn mật mã — trên trình duyệt là Web Crypto API — và phương pháp không thiên vị để biến các bit ngẫu nhiên thành lựa chọn. Mọi công cụ SpinWheelGe đều hoạt động như vậy, và vòng quay quyết định người thắng trước khi hiệu ứng bắt đầu để hình ảnh không ảnh hưởng kết quả." },
       { h2: "Hướng dẫn chọn nhanh" },
       { ul: ["Hai lựa chọn → tung đồng xu", "Câu hỏi có/không → công cụ có hay không", "3–20 lựa chọn, có người xem → vòng quay", "Lựa chọn quan trọng khác nhau → vòng quay có trọng số", "Khoảng số lớn → tạo số ngẫu nhiên", "Chia người thành nhóm → chia đội ngẫu nhiên"] },
       { tip: "Nếu kết quả làm bạn thất vọng, đó là thông tin hữu ích. Công cụ ngẫu nhiên rất giỏi tiết lộ điều bạn thật sự muốn từ đầu." },

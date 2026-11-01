@@ -255,7 +255,7 @@ export const templates: Record<string, TemplateText> = {
     description: "Gire uma categoria para parar de rolar sem fim.",
     seoTitle: "Roleta de gêneros da Netflix – O que assistir hoje",
     metaDescription: "Gire um gênero para procurar na Netflix hoje e acabe com a rolagem infinita. Roleta de gêneros grátis. Sem vínculo com a Netflix.",
-    intro: "Esta roleta usa categorias amplas presentes na maioria das plataformas. Gire, abra a categoria no app e escolha um dos cinco primeiros títulos: nada de passar da segunda fileira. O WhirlPick não tem vínculo com a Netflix.",
+    intro: "Esta roleta usa categorias amplas presentes na maioria das plataformas. Gire, abra a categoria no app e escolha um dos cinco primeiros títulos: nada de passar da segunda fileira. O SpinWheelGe não tem vínculo com a Netflix.",
     tips: ["Regra: só a primeira fileira.", "Adicione uma roleta de “filme ou série”.", "Troque por títulos da sua lista para escolher direto."],
     faqs: [
       { q: "É uma ferramenta oficial da Netflix?", a: "Não. É uma roleta independente que sugere gêneros. Netflix é marca da Netflix, Inc." },

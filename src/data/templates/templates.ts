@@ -423,7 +423,7 @@ export const templates: WheelTemplate[] = [
     description: "Spin a browsing category to stop the endless scroll.",
     seoTitle: "Netflix Genre Picker Wheel – What to Watch Tonight",
     metaDescription: "Spin a genre to browse on Netflix tonight and end the endless scroll. Free genre picker wheel for movie night. Not affiliated with Netflix.",
-    intro: "This wheel uses broad browsing categories you'll find on most streaming services. Spin, open that category in your app and pick one of the first five titles you see — no scrolling past row two. WhirlPick isn't affiliated with Netflix.",
+    intro: "This wheel uses broad browsing categories you'll find on most streaming services. Spin, open that category in your app and pick one of the first five titles you see — no scrolling past row two. SpinWheelGe isn't affiliated with Netflix.",
     tips: [
       "Set a rule: pick from the first row only.",
       "Add a second wheel for 'movie or series'.",

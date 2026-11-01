@@ -497,7 +497,7 @@ export const landingWheels: Record<string, LandingText> = {
     ],
     faqs: [
       { q: "Puis-je mettre ma liste de films à voir sur la roue ?", a: "Oui. Copiez les titres dans Coller une liste, un par ligne. La roue accepte jusqu’à 1 000 titres." },
-      { q: "Existe-t-il une roue spéciale Netflix ?", a: "Essayez le modèle Genres Netflix, basé sur des catégories populaires. WhirlPick n’est pas affilié à Netflix." },
+      { q: "Existe-t-il une roue spéciale Netflix ?", a: "Essayez le modèle Genres Netflix, basé sur des catégories populaires. SpinWheelGe n’est pas affilié à Netflix." },
       { q: "Comment éviter un film déjà vu ?", a: "Utilisez le mode Élimination ou cliquez sur l’œil pour masquer les titres vus." },
     ],
   },

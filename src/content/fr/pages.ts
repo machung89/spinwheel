@@ -2,11 +2,11 @@ import type { PagesContent } from "../types";
 
 export const pages: PagesContent = {
   about: {
-    title: "À propos de WhirlPick",
-    seoTitle: "À propos de WhirlPick – Roues aléatoires gratuites et équitables",
-    description: "WhirlPick crée des roues et outils aléatoires gratuits, équitables et respectueux de la vie privée pour enseignants, familles, créateurs et équipes.",
+    title: "À propos de SpinWheelGe",
+    seoTitle: "À propos de SpinWheelGe – Roues aléatoires gratuites",
+    description: "SpinWheelGe crée des roues et outils aléatoires gratuits, équitables et respectueux de la vie privée pour enseignants, familles, créateurs et équipes.",
     blocks: [
-      { p: "WhirlPick est une collection gratuite de roues et d’outils aléatoires pour les petites décisions du quotidien : qui répond à la prochaine question, où manger, quel lot gagne un visiteur et qui joue dans quelle équipe." },
+      { p: "SpinWheelGe est une collection gratuite de roues et d’outils aléatoires pour les petites décisions du quotidien : qui répond à la prochaine question, où manger, quel lot gagne un visiteur et qui joue dans quelle équipe." },
       { h2: "Nos convictions" },
       { ul: [
         "**Équitable veut dire vérifiable.** Chaque résultat vient du générateur cryptographique de nombres aléatoires de votre navigateur, et la roue choisit le gagnant avant de tourner. L’animation montre le résultat, elle ne le détermine jamais.",
@@ -16,16 +16,16 @@ export const pages: PagesContent = {
       ] },
       { h2: "Comment fonctionne le hasard" },
       { p: "Au lancement, nous demandons des bits aléatoires à la Web Crypto API et les transformons en choix par échantillonnage par rejet, ce qui évite le léger biais du code « nombre aléatoire modulo taille de la liste ». En mode pondéré, chaque entrée reçoit des tickets proportionnels à son poids et un ticket est tiré. Nous calculons ensuite exactement de combien la roue doit tourner pour que le secteur gagnant s’arrête sous le pointeur." },
-      { h2: "Qui utilise WhirlPick" },
+      { h2: "Qui utilise SpinWheelGe" },
       { p: "Des enseignants pour interroger et attribuer les responsabilités, des créateurs pour leurs concours en direct, des équipes événementielles pour les roues des lots de leurs stands, et des familles pour régler le débat du « on mange quoi ? ». Une idée de modèle ou d’outil ? Dites-le-nous sur notre [page de contact](/contact/)." },
     ],
   },
   contact: {
     title: "Contact",
-    seoTitle: "Contacter WhirlPick – Suggestions, questions et aide",
-    description: "Contactez l’équipe WhirlPick pour vos questions, suggestions, idées de modèles, signalements de bugs ou demandes liées à la vie privée.",
+    seoTitle: "Contacter SpinWheelGe – Suggestions, questions et aide",
+    description: "Contactez l’équipe SpinWheelGe pour vos questions, suggestions, idées de modèles, signalements de bugs ou demandes liées à la vie privée.",
     blocks: [
-      { p: "Nous lisons tous les messages. Que vous ayez trouvé un bug, une idée de modèle ou envie de nous raconter comment vous utilisez WhirlPick en classe, nous serons ravis de vous lire." },
+      { p: "Nous lisons tous les messages. Que vous ayez trouvé un bug, une idée de modèle ou envie de nous raconter comment vous utilisez SpinWheelGe en classe, nous serons ravis de vous lire." },
       { h2: "Informations utiles" },
       { ul: ["Pour un bug : l’adresse de la page, votre navigateur et appareil, et ce que vous attendiez.", "Pour une idée de modèle : la liste des entrées souhaitées.", "Pour une demande de confidentialité : ce que vous souhaitez. Vos roues étant stockées dans votre navigateur, nous ne détenons généralement aucune donnée vous concernant."] },
       { h2: "Avant d’écrire" },
@@ -34,8 +34,8 @@ export const pages: PagesContent = {
   },
   privacy: {
     title: "Politique de confidentialité",
-    seoTitle: "Politique de confidentialité | WhirlPick",
-    description: "Comment WhirlPick traite vos données : les roues restent dans votre navigateur, cookies de mesure et de publicité facultatifs avec consentement, et vos droits.",
+    seoTitle: "Politique de confidentialité | SpinWheelGe",
+    description: "Comment SpinWheelGe traite vos données : les roues restent dans votre navigateur, cookies de mesure et de publicité facultatifs avec consentement, et vos droits.",
     updated: "Dernière mise à jour : 1er novembre 2026",
     blocks: [
       { p: "Cette politique explique quelles informations {site} (« nous ») collecte lorsque vous utilisez {domain} (le « Site »), comment elles sont utilisées et quels choix vous avez. En bref : les roues et listes que vous créez restent dans votre navigateur, et les cookies facultatifs de mesure d’audience et de publicité ne sont utilisés que selon vos choix." },
@@ -69,8 +69,8 @@ export const pages: PagesContent = {
   },
   terms: {
     title: "Conditions d’utilisation",
-    seoTitle: "Conditions d’utilisation | WhirlPick",
-    description: "Les conditions applicables à l’utilisation des roues et outils aléatoires gratuits de WhirlPick : usage acceptable, concours et limitations de responsabilité.",
+    seoTitle: "Conditions d’utilisation | SpinWheelGe",
+    description: "Les conditions applicables à l’utilisation des roues et outils aléatoires gratuits de SpinWheelGe : usage acceptable, concours et limitations de responsabilité.",
     updated: "Dernière mise à jour : 1er novembre 2026",
     blocks: [
       { p: "Ces conditions s’appliquent à votre utilisation de {site} (le « Site »). En utilisant le Site, vous les acceptez. Si vous n’êtes pas d’accord, n’utilisez pas le Site." },

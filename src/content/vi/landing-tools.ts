@@ -332,7 +332,7 @@ export const landingTools: Record<string, LandingText> = {
       { q: "Có cần đăng nhập YouTube không?", a: "Không. Công cụ chỉ đọc bình luận công khai nên không cần đăng nhập." },
       { q: "Tải được bao nhiêu bình luận?", a: "Tối đa 4.000 bình luận cấp một mỗi video. Với minigame lớn hơn, hãy dán bình luận từ tệp xuất." },
       { q: "Có tính cả trả lời bình luận không?", a: "Chỉ bình luận cấp một được tải — đây là luật thường dùng cho minigame bình luận." },
-      { q: "WhirlPick có liên kết với YouTube không?", a: "Không. WhirlPick là công cụ độc lập dùng YouTube Data API công khai. YouTube là thương hiệu của Google LLC." },
+      { q: "SpinWheelGe có liên kết với YouTube không?", a: "Không. SpinWheelGe là công cụ độc lập dùng YouTube Data API công khai. YouTube là thương hiệu của Google LLC." },
     ],
   },
 };

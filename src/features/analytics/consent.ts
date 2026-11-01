@@ -16,7 +16,7 @@ export interface Consent {
 }
 
 export const CONSENT_KEY = "consent";
-export const OPEN_CONSENT_EVENT = "whirlpick:open-consent";
+export const OPEN_CONSENT_EVENT = "spinwheelge:open-consent";
 
 export const analyticsConfig = {
   gaId: process.env.NEXT_PUBLIC_GA_ID || "",
@@ -58,4 +58,4 @@ export function saveConsent(c: Pick<Consent, "analytics" | "ads">) {
 }
 
 /** Inline <head> script: defines gtag and sets Consent Mode defaults before any Google tag loads. */
-export const consentDefaultsScript = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",functionality_storage:"granted",security_storage:"granted",wait_for_update:500});try{var c=JSON.parse(localStorage.getItem("whirlpick:v1:consent"));if(c){var a=c.ads&&navigator.globalPrivacyControl!==true;gtag("consent","update",{analytics_storage:c.analytics?"granted":"denied",ad_storage:a?"granted":"denied",ad_user_data:a?"granted":"denied",ad_personalization:a?"granted":"denied"})}}catch(e){}`;
+export const consentDefaultsScript = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",functionality_storage:"granted",security_storage:"granted",wait_for_update:500});try{var c=JSON.parse(localStorage.getItem("spinwheelge:v1:consent"));if(c){var a=c.ads&&navigator.globalPrivacyControl!==true;gtag("consent","update",{analytics_storage:c.analytics?"granted":"denied",ad_storage:a?"granted":"denied",ad_user_data:a?"granted":"denied",ad_personalization:a?"granted":"denied"})}}catch(e){}`;

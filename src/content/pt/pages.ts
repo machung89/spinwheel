@@ -2,11 +2,11 @@ import type { PagesContent } from "../types";
 
 export const pages: PagesContent = {
   about: {
-    title: "Sobre o WhirlPick",
-    seoTitle: "Sobre o WhirlPick – Roletas aleatórias grátis e justas",
-    description: "O WhirlPick cria roletas e ferramentas aleatórias grátis, justas e privadas para professores, famílias, criadores e equipes. Saiba como e por que fizemos.",
+    title: "Sobre o SpinWheelGe",
+    seoTitle: "Sobre o SpinWheelGe – Roletas aleatórias grátis e justas",
+    description: "O SpinWheelGe cria roletas e ferramentas aleatórias grátis, justas e privadas para professores, famílias, criadores e equipes. Saiba como e por que fizemos.",
     blocks: [
-      { p: "O WhirlPick é uma coleção grátis de roletas e ferramentas aleatórias para as pequenas decisões do dia a dia: quem responde a próxima pergunta, onde comer, que prêmio o visitante ganha e quem fica em qual time." },
+      { p: "O SpinWheelGe é uma coleção grátis de roletas e ferramentas aleatórias para as pequenas decisões do dia a dia: quem responde a próxima pergunta, onde comer, que prêmio o visitante ganha e quem fica em qual time." },
       { h2: "No que acreditamos" },
       { ul: [
         "**Justo é comprovável.** Todo resultado vem do gerador criptográfico de números aleatórios do seu navegador, e a roleta decide o vencedor antes de girar. A animação mostra o resultado; nunca o define.",
@@ -16,16 +16,16 @@ export const pages: PagesContent = {
       ] },
       { h2: "Como funciona a aleatoriedade" },
       { p: "Ao girar, pedimos bits aleatórios à Web Crypto API e transformamos em escolha com amostragem por rejeição, que evita o pequeno viés do código simples de “número aleatório módulo tamanho da lista”. No modo com pesos, cada item recebe bilhetes proporcionais ao peso e um bilhete é sorteado. Depois calculamos exatamente quanto a roleta precisa girar para a fatia vencedora parar sob o ponteiro." },
-      { h2: "Quem usa o WhirlPick" },
+      { h2: "Quem usa o SpinWheelGe" },
       { p: "Professores usam para chamar alunos e dividir tarefas, criadores para sorteios ao vivo, equipes de eventos para roletas de prêmios em estandes e famílias para resolver o “o que vamos jantar?”. Tem ideia de modelo ou ferramenta? Conte para nós na [página de contato](/contact/)." },
     ],
   },
   contact: {
     title: "Contato",
-    seoTitle: "Fale com o WhirlPick – Sugestões, dúvidas e suporte",
-    description: "Fale com a equipe do WhirlPick para dúvidas, sugestões, ideias de modelos, relatos de erro ou pedidos de privacidade.",
+    seoTitle: "Fale com o SpinWheelGe – Sugestões, dúvidas e suporte",
+    description: "Fale com a equipe do SpinWheelGe para dúvidas, sugestões, ideias de modelos, relatos de erro ou pedidos de privacidade.",
     blocks: [
-      { p: "Lemos todas as mensagens. Achou um erro, tem uma ideia de modelo novo ou quer contar como usa o WhirlPick na sala de aula? Vamos adorar saber." },
+      { p: "Lemos todas as mensagens. Achou um erro, tem uma ideia de modelo novo ou quer contar como usa o SpinWheelGe na sala de aula? Vamos adorar saber." },
       { h2: "Informações úteis" },
       { ul: ["Para erros: o endereço da página, seu navegador e aparelho, e o que você esperava que acontecesse.", "Para ideias de modelos: a lista de itens que gostaria de ver.", "Para pedidos de privacidade: o que deseja que façamos. As roletas ficam no seu navegador, então normalmente não temos dados seus."] },
       { h2: "Antes de escrever" },
@@ -34,8 +34,8 @@ export const pages: PagesContent = {
   },
   privacy: {
     title: "Política de privacidade",
-    seoTitle: "Política de privacidade | WhirlPick",
-    description: "Como o WhirlPick trata seus dados: as roletas ficam no navegador, cookies opcionais de estatísticas e anúncios com consentimento, e seus direitos de privacidade.",
+    seoTitle: "Política de privacidade | SpinWheelGe",
+    description: "Como o SpinWheelGe trata seus dados: as roletas ficam no navegador, cookies opcionais de estatísticas e anúncios com consentimento, e seus direitos de privacidade.",
     updated: "Última atualização: 1º de novembro de 2026",
     blocks: [
       { p: "Esta política explica quais informações o {site} (“nós”) coleta quando você usa o {domain} (o “Site”), como são usadas e quais escolhas você tem. Resumindo: as roletas e listas que você cria ficam no navegador, e cookies opcionais de estatísticas e anúncios só são usados conforme suas escolhas." },
@@ -69,8 +69,8 @@ export const pages: PagesContent = {
   },
   terms: {
     title: "Termos de uso",
-    seoTitle: "Termos de uso | WhirlPick",
-    description: "Os termos aplicáveis ao uso das roletas e ferramentas aleatórias grátis do WhirlPick, incluindo uso aceitável, sorteios e isenções de responsabilidade.",
+    seoTitle: "Termos de uso | SpinWheelGe",
+    description: "Os termos aplicáveis ao uso das roletas e ferramentas aleatórias grátis do SpinWheelGe, incluindo uso aceitável, sorteios e isenções de responsabilidade.",
     updated: "Última atualização: 1º de novembro de 2026",
     blocks: [
       { p: "Estes termos valem para o uso do {site} (o “Site”). Ao usar o Site você concorda com eles. Se não concordar, não use o Site." },

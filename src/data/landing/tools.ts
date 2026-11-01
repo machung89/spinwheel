@@ -377,7 +377,7 @@ export const toolLandingPages: LandingPage[] = [
       { q: "Do I need to sign in with YouTube?", a: "No. The picker only reads public comments, so no sign-in is needed." },
       { q: "How many comments can it load?", a: "Up to 4,000 top-level comments per video. For larger giveaways, paste comments from an export." },
       { q: "Are replies included?", a: "Only top-level comments are loaded, which is the usual rule for comment giveaways." },
-      { q: "Is WhirlPick affiliated with YouTube?", a: "No. WhirlPick is an independent tool that uses the public YouTube Data API. YouTube is a trademark of Google LLC." },
+      { q: "Is SpinWheelGe affiliated with YouTube?", a: "No. SpinWheelGe is an independent tool that uses the public YouTube Data API. YouTube is a trademark of Google LLC." },
     ],
     related: ["prize-wheel", "wheel-of-names", "random-number-generator", "random-picker", "team-generator", "spin-the-wheel"],
   },

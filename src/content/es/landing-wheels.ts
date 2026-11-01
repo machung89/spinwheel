@@ -506,7 +506,7 @@ export const landingWheels: Record<string, LandingText> = {
     ],
     faqs: [
       { q: "¿Puedo poner mi lista de pendientes en la ruleta?", a: "Sí. Copia los títulos en Pegar lista, uno por línea. La ruleta admite hasta 1.000 títulos." },
-      { q: "¿Hay una ruleta solo para Netflix?", a: "Prueba la plantilla de géneros de Netflix, con categorías populares. WhirlPick no está afiliado a Netflix." },
+      { q: "¿Hay una ruleta solo para Netflix?", a: "Prueba la plantilla de géneros de Netflix, con categorías populares. SpinWheelGe no está afiliado a Netflix." },
       { q: "¿Cómo evito elegir una peli que ya vimos?", a: "Usa el modo Eliminación o pulsa el icono del ojo para ocultar los títulos vistos." },
     ],
   },

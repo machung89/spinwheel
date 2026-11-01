@@ -1,4 +1,4 @@
-# WhirlPick — Spin the Wheel & Random Picker Tools
+# SpinWheelGe — Spin the Wheel & Random Picker Tools
 
 A free, SEO-first random picker platform: a fully featured spinning wheel, 12 wheel landing pages,
 8 standalone random tools, 48 templates in 10 categories (37 with their own page, 11 linking to landing pages), and a blog —

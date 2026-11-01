@@ -284,7 +284,7 @@ export const landingTools: Record<string, LandingText> = {
       { q: "Preciso entrar na minha conta do YouTube?", a: "Não. A ferramenta só lê comentários públicos, então não precisa de login." },
       { q: "Quantos comentários ela carrega?", a: "Até 4.000 comentários principais por vídeo. Para sorteios maiores, cole os comentários de uma exportação." },
       { q: "As respostas entram?", a: "Só os comentários principais são carregados, que é a regra comum em sorteios por comentário." },
-      { q: "O WhirlPick tem vínculo com o YouTube?", a: "Não. O WhirlPick é uma ferramenta independente que usa a API pública do YouTube Data. YouTube é marca do Google LLC." },
+      { q: "O SpinWheelGe tem vínculo com o YouTube?", a: "Não. O SpinWheelGe é uma ferramenta independente que usa a API pública do YouTube Data. YouTube é marca do Google LLC." },
     ],
   },
 };

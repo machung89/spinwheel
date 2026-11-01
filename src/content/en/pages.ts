@@ -2,11 +2,11 @@ import type { PagesContent } from "../types";
 
 export const pages: PagesContent = {
   about: {
-    title: "About WhirlPick",
-    seoTitle: "About WhirlPick – Free, Fair Random Picker Wheels",
-    description: "WhirlPick makes free, fair and private spinning wheels and random tools for teachers, families, creators and teams. Learn how and why we built it.",
+    title: "About SpinWheelGe",
+    seoTitle: "About SpinWheelGe – Free, Fair Random Picker Wheels",
+    description: "SpinWheelGe makes free, fair and private spinning wheels and random tools for teachers, families, creators and teams. Learn how and why we built it.",
     blocks: [
-      { p: "WhirlPick is a free collection of spinning wheels and random tools for the small decisions that fill everyday life — who answers the next question, where to eat, which prize a visitor wins, and who's on which team." },
+      { p: "SpinWheelGe is a free collection of spinning wheels and random tools for the small decisions that fill everyday life — who answers the next question, where to eat, which prize a visitor wins, and who's on which team." },
       { h2: "What we believe" },
       {
         ul: [
@@ -18,16 +18,16 @@ export const pages: PagesContent = {
       },
       { h2: "How the randomness works" },
       { p: 'When you spin, we ask the Web Crypto API for random bits and convert them to a choice using rejection sampling, which avoids the small bias that simple "random number modulo list length" code introduces. In weighted mode, each entry receives a number of tickets proportional to its weight and one ticket is drawn. Then we calculate exactly how far the wheel must turn to stop with the winning slice under the pointer.' },
-      { h2: "Who uses WhirlPick" },
+      { h2: "Who uses SpinWheelGe" },
       { p: "Teachers in the US and Canada use it for cold calling and classroom jobs, creators use it for live giveaways, event teams run prize wheels at booths, and families use it to settle the nightly \"what's for dinner?\" debate. If you have an idea for a template or tool, we'd love to hear it on our [contact page](/contact/)." },
     ],
   },
   contact: {
     title: "Contact us",
-    seoTitle: "Contact WhirlPick – Feedback, Questions & Support",
-    description: "Get in touch with the WhirlPick team with questions, feedback, template ideas, bug reports or privacy requests.",
+    seoTitle: "Contact SpinWheelGe – Feedback, Questions & Support",
+    description: "Get in touch with the SpinWheelGe team with questions, feedback, template ideas, bug reports or privacy requests.",
     blocks: [
-      { p: "We read every message. Whether you found a bug, have an idea for a new wheel template, or want to tell us how you use WhirlPick in your classroom, we'd love to hear from you." },
+      { p: "We read every message. Whether you found a bug, have an idea for a new wheel template, or want to tell us how you use SpinWheelGe in your classroom, we'd love to hear from you." },
       { h2: "Helpful details to include" },
       {
         ul: [
@@ -42,8 +42,8 @@ export const pages: PagesContent = {
   },
   privacy: {
     title: "Privacy Policy",
-    seoTitle: "Privacy Policy | WhirlPick",
-    description: "How WhirlPick handles your data: wheels stay in your browser, analytics and ad cookies only with consent, and your privacy rights in the US, Canada and EU.",
+    seoTitle: "Privacy Policy | SpinWheelGe",
+    description: "How SpinWheelGe handles your data: wheels stay in your browser, analytics and ad cookies only with consent, and your privacy rights in the US, Canada and EU.",
     updated: "Last updated: November 1, 2026",
     blocks: [
       { p: 'This policy explains what information {site} ("we", "us") collects when you use {domain} (the "Site"), how it\'s used, and the choices you have. The short version: the wheels and lists you create stay in your browser, and optional analytics and advertising cookies are only used according to your choices.' },
@@ -79,8 +79,8 @@ export const pages: PagesContent = {
   },
   terms: {
     title: "Terms of Service",
-    seoTitle: "Terms of Service | WhirlPick",
-    description: "The terms that apply when you use WhirlPick's free spinning wheels and random tools, including acceptable use, giveaways and disclaimers.",
+    seoTitle: "Terms of Service | SpinWheelGe",
+    description: "The terms that apply when you use SpinWheelGe's free spinning wheels and random tools, including acceptable use, giveaways and disclaimers.",
     updated: "Last updated: November 1, 2026",
     blocks: [
       { p: 'These terms apply to your use of {site} (the "Site"). By using the Site you agree to them. If you don\'t agree, please don\'t use the Site.' },

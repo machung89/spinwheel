@@ -259,7 +259,7 @@ export const templates: Record<string, TemplateText> = {
     description: "Quay một danh mục để thôi lướt mãi.",
     seoTitle: "Vòng quay chọn thể loại Netflix – Tối nay xem gì?",
     metaDescription: "Quay để chọn thể loại duyệt trên Netflix tối nay và chấm dứt việc lướt vô tận. Vòng quay thể loại miễn phí. Không liên kết với Netflix.",
-    intro: "Vòng quay dùng các danh mục duyệt phổ biến có trên hầu hết nền tảng phát trực tuyến. Quay, mở danh mục đó trong ứng dụng và chọn một trong năm phim đầu tiên — không lướt quá hàng thứ hai. WhirlPick không liên kết với Netflix.",
+    intro: "Vòng quay dùng các danh mục duyệt phổ biến có trên hầu hết nền tảng phát trực tuyến. Quay, mở danh mục đó trong ứng dụng và chọn một trong năm phim đầu tiên — không lướt quá hàng thứ hai. SpinWheelGe không liên kết với Netflix.",
     tips: ["Đặt luật: chỉ chọn ở hàng đầu tiên.", "Thêm vòng quay “phim lẻ hay phim bộ”.", "Thay bằng tên phim trong danh sách để chọn thẳng."],
     faqs: [
       { q: "Đây có phải công cụ chính thức của Netflix không?", a: "Không. Đây là vòng quay độc lập gợi ý thể loại để duyệt. Netflix là thương hiệu của Netflix, Inc." },

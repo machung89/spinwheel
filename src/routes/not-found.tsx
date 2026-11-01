@@ -4,12 +4,13 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useI18n } from "@/i18n/provider";
 import { buttonClass } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site";
 
 export default function NotFound() {
   const { t, href } = useI18n();
   // Next already sends a 404 status and noindex; this just localizes the tab title.
   useEffect(() => {
-    document.title = `${t.notFound.title} | WhirlPick`;
+    document.title = `${t.notFound.title} | ${siteConfig.name}`;
   }, [t]);
   return (
     <div className="mx-auto max-w-xl px-4 py-24 text-center">

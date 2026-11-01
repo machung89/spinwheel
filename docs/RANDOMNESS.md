@@ -1,4 +1,4 @@
-# How WhirlPick picks winners
+# How SpinWheelGe picks winners
 
 All selection code lives in `src/features/random/rng.ts` and `src/features/wheel-engine/engine.ts`
 and is covered by `tests/rng.test.ts` and `tests/engine.test.ts`.

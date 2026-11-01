@@ -640,7 +640,7 @@ export const wheelLandingPages: LandingPage[] = [
     ],
     faqs: [
       { q: "Can I put my streaming watchlist on the wheel?", a: "Yes. Copy the titles into Bulk paste, one per line. The wheel holds up to 1,000 titles." },
-      { q: "Is there a wheel just for Netflix?", a: "Try the Netflix Genre Picker template, which uses popular browsing categories. WhirlPick isn't affiliated with Netflix." },
+      { q: "Is there a wheel just for Netflix?", a: "Try the Netflix Genre Picker template, which uses popular browsing categories. SpinWheelGe isn't affiliated with Netflix." },
       { q: "How do I avoid picking a movie we've already seen?", a: "Use Elimination mode, or click the eye icon to hide titles you've watched." },
     ],
     related: ["food-wheel", "decision-wheel", "spin-the-wheel", "random-picker", "yes-or-no-wheel", "truth-or-dare-wheel"],

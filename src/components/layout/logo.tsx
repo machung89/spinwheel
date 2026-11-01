@@ -1,5 +1,5 @@
 export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
-  // Four-color wheel with a notch pointer — the WhirlPick mark.
+  // Four-color wheel with a notch pointer — the SpinWheelGe mark.
   return (
     <svg viewBox="0 0 40 40" className={className} aria-hidden="true">
       <circle cx="20" cy="21" r="17" fill="#fff" />
@@ -19,7 +19,7 @@ export function Logo() {
     <span className="flex items-center gap-2">
       <LogoMark />
       <span className="text-lg font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
-        Whirl<span className="text-primary">Pick</span>
+        SpinWheel<span className="text-primary">Ge</span>
       </span>
     </span>
   );

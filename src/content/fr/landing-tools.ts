@@ -284,7 +284,7 @@ export const landingTools: Record<string, LandingText> = {
       { q: "Faut-il se connecter à YouTube ?", a: "Non. L’outil ne lit que les commentaires publics, aucune connexion n’est nécessaire." },
       { q: "Combien de commentaires peut-il charger ?", a: "Jusqu’à 4 000 commentaires principaux par vidéo. Pour de plus gros concours, collez les commentaires depuis un export." },
       { q: "Les réponses sont-elles incluses ?", a: "Seuls les commentaires principaux sont chargés, la règle habituelle des concours par commentaire." },
-      { q: "WhirlPick est-il affilié à YouTube ?", a: "Non. WhirlPick est un outil indépendant qui utilise l’API publique YouTube Data. YouTube est une marque de Google LLC." },
+      { q: "SpinWheelGe est-il affilié à YouTube ?", a: "Non. SpinWheelGe est un outil indépendant qui utilise l’API publique YouTube Data. YouTube est une marque de Google LLC." },
     ],
   },
 };

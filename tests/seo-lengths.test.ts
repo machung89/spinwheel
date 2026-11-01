@@ -4,6 +4,7 @@ import { getDict } from "@/i18n/server";
 import { categoriesFor, landingPagesFor, pagesFor, postsFor, templatesFor } from "@/content";
 import { isFullTemplate } from "@/data/templates/templates";
 import { fitTitle } from "@/lib/seo";
+import { siteConfig } from "@/lib/site";
 
 // Search results show roughly 60 characters of a title and 155–160 of a description.
 // Translations run longer than English, so this guards every locale.
@@ -12,7 +13,7 @@ const DESC = { min: 70, max: 165 };
 
 function metas(locale: (typeof locales)[number]) {
   const t = getDict(locale);
-  const brand = (s: string) => `${s} | WhirlPick`;
+  const brand = (s: string) => `${s} | ${siteConfig.name}`;
   const pages = pagesFor(locale);
   return [
     { id: "home", title: t.home.seoTitle, description: t.home.description },

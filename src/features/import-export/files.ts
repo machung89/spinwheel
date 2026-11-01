@@ -5,7 +5,7 @@ import { parseCSV, rowsToEntries, type ImportResult } from "./csv";
 import { AppError } from "@/i18n/errors";
 
 export const MAX_IMPORT_BYTES = 5 * 1024 * 1024;
-export const JSON_FORMAT = "whirlpick-wheels";
+export const JSON_FORMAT = "spinwheelge-wheels";
 
 export function downloadFile(filename: string, content: string | Blob, type = "text/plain;charset=utf-8") {
   const blob = typeof content === "string" ? new Blob([content], { type }) : content;

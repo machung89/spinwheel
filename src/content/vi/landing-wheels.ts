@@ -574,7 +574,7 @@ export const landingWheels: Record<string, LandingText> = {
     ],
     faqs: [
       { q: "Có đưa danh sách phim muốn xem lên vòng quay được không?", a: "Được. Chép tên phim vào Dán nhiều, mỗi dòng một phim. Vòng quay chứa tới 1.000 phim." },
-      { q: "Có vòng quay riêng cho Netflix không?", a: "Hãy thử mẫu Chọn thể loại Netflix, dùng các danh mục duyệt phim phổ biến. WhirlPick không liên kết với Netflix." },
+      { q: "Có vòng quay riêng cho Netflix không?", a: "Hãy thử mẫu Chọn thể loại Netflix, dùng các danh mục duyệt phim phổ biến. SpinWheelGe không liên kết với Netflix." },
       { q: "Làm sao tránh chọn phim đã xem?", a: "Dùng chế độ Loại trừ, hoặc bấm biểu tượng con mắt để ẩn phim đã xem." },
     ],
   },

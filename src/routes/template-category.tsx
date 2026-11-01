@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { Container, RelatedLinks } from "@/components/layout/content-blocks";
 import { TemplateCard } from "@/components/templates/template-card";
 import { AdSlot } from "@/components/ads/ad-slot";
+import { siteConfig } from "@/lib/site";
 
 export function categoryParams(locs: readonly Locale[]) {
   return locs.flatMap((lang) => categoriesFor(lang).map((c) => ({ lang, category: c.slug })));
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = toLocale(lang);
   const c = categoriesFor(locale).find((x) => x.slug === category);
   if (!c) return {};
-  return pageMetadata({ locale, title: `${c.seoTitle} | WhirlPick`, description: c.metaDescription, path: `/templates/${c.slug}/` });
+  return pageMetadata({ locale, title: `${c.seoTitle} | ${siteConfig.name}`, description: c.metaDescription, path: `/templates/${c.slug}/` });
 }
 
 export default async function CategoryPage({ params }: Props) {

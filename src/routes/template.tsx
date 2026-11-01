@@ -11,6 +11,7 @@ import { Container, FaqSection, RelatedLinks, Steps, TrustBadges } from "@/compo
 import { storageKeyFor } from "@/components/layout/landing-view";
 import { WheelApp } from "@/components/wheel/wheel-app";
 import { AdSlot } from "@/components/ads/ad-slot";
+import { siteConfig } from "@/lib/site";
 
 export function templateParams(locs: readonly Locale[]) {
   return locs.flatMap((lang) => templatesFor(lang).filter(isFullTemplate).map((t) => ({ lang, category: t.category, slug: t.slug })));
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = toLocale(lang);
   const t = find(locale, category, slug);
   if (!t) return {};
-  return pageMetadata({ locale, title: `${t.seoTitle} | WhirlPick`, description: t.metaDescription, path: templateHref(t) });
+  return pageMetadata({ locale, title: `${t.seoTitle} | ${siteConfig.name}`, description: t.metaDescription, path: templateHref(t) });
 }
 
 export default async function TemplatePage({ params }: Props) {

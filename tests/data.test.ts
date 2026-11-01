@@ -88,7 +88,7 @@ describe("share links", () => {
     expect(back.history).toEqual([]);
   });
   it("builds and reads URLs", async () => {
-    const url = await buildShareUrl([makeWheel()], "https://whirlpick.com/");
+    const url = await buildShareUrl([makeWheel()], "https://spinwheelge.com/");
     const code = readShareCode(new URL(url).hash)!;
     expect((await decodeShare(code))[0].entries.length).toBe(8);
   });

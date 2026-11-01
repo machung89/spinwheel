@@ -1,6 +1,6 @@
 import type { BlogPost } from "@/data/blog/types";
 
-const author = "Equipe WhirlPick";
+const author = "Equipe SpinWheelGe";
 
 export const posts: BlogPost[] = [
   {
@@ -30,7 +30,7 @@ export const posts: BlogPost[] = [
       { h2: "3. Duplas e grupos aleatórios" },
       { p: "Deixar os alunos escolherem a dupla costuma deixar os mesmos de fora. Para duplas e grupos pequenos, a roleta funciona, mas o [sorteador de times](/team-generator/) é mais rápido: cole a lista uma vez e divida a turma em grupos equilibrados com um toque." },
       { h2: "4. Jogos de revisão com perguntas ocultas" },
-      { p: "Cada item de uma roleta do WhirlPick pode ter uma atividade oculta: uma pergunta, tarefa ou palavra revelada só quando a roleta para. Assim os jogos de revisão quase não dão trabalho:" },
+      { p: "Cada item de uma roleta do SpinWheelGe pode ter uma atividade oculta: uma pergunta, tarefa ou palavra revelada só quando a roleta para. Assim os jogos de revisão quase não dão trabalho:" },
       { ol: ["Crie uma roleta de temas ou de pontos (100, 200, 300…).", "Coloque uma pergunta na atividade oculta de cada item.", "Gire, revele a pergunta e deixe as equipes responderem.", "Use o modo Placar ou o histórico para contar os pontos."] },
       { h2: "5. Pausas ativas e transições" },
       { p: "Quando a energia despenca depois do almoço, dois minutos de movimento salvam a tarde. Coloque atividades numa roleta — polichinelo, dança da estátua, alongamento — e deixe um aluno girar. O [modelo de pausas ativas](/templates/classroom/brain-break-wheel/) é um bom começo." },
@@ -38,7 +38,7 @@ export const posts: BlogPost[] = [
       { p: "A roleta de nomes é uma ferramenta, e como toda ferramenta pode ser bem ou mal usada. Alguns cuidados mantêm tudo positivo:" },
       { ul: ["Avise antes os alunos mais ansiosos, ou deixe responder em dupla.", "Comece com perguntas fáceis para a turma se acostumar.", "Nunca use a roleta para escolher castigos.", "Escreva os nomes corretamente e use os nomes que os alunos preferem: faz diferença."] },
       { h2: "Privacidade para professores" },
-      { p: "Nomes de alunos são dados pessoais, então vale saber para onde vão. O WhirlPick salva as roletas só no armazenamento local do navegador. Não há contas nem banco de dados no servidor, e links só são criados se você tocar em Compartilhar. Se compartilhar uma roleta com alunos, o link contém os nomes, então envie só para quem deve ver." },
+      { p: "Nomes de alunos são dados pessoais, então vale saber para onde vão. O SpinWheelGe salva as roletas só no armazenamento local do navegador. Não há contas nem banco de dados no servidor, e links só são criados se você tocar em Compartilhar. Se compartilhar uma roleta com alunos, o link contém os nomes, então envie só para quem deve ver." },
       { h2: "Checklist rápido" },
       { ol: ["Abra a roleta de nomes e cole a lista (um nome por linha).", "Mude para o modo Eliminação na aba Giro.", "Escolha um tema e ligue o som.", "Toque em tela cheia ao projetar.", "No fim da aula, toque em Restaurar tudo para o dia seguinte."] },
     ],
@@ -95,13 +95,13 @@ export const posts: BlogPost[] = [
       { p: "O [sorteio de comentários do YouTube](/youtube-comment-picker/) faz os passos 2 a 4 automaticamente para vídeos do YouTube: carrega comentários, filtra por palavra-chave, exclui as contas que você indicar e limita a uma participação por pessoa." },
       { h2: "Passo 4: Sorteie na frente da câmera" },
       { p: "Transparência é a melhor defesa contra acusações. Sorteie onde os participantes possam ver: uma live, uma gravação de tela publicada depois ou um story. Uma ferramenta visual como a [roleta de nomes](/wheel-of-names/) ou a [roleta de prêmios](/prize-wheel/) deixa o sorteio fácil de acompanhar e mais emocionante." },
-      { p: "Confira se a ferramenta é realmente aleatória. O WhirlPick escolhe o ganhador com o gerador criptográfico do navegador antes da animação começar, então o resultado não depende de quando nem de quão rápido você toca." },
+      { p: "Confira se a ferramenta é realmente aleatória. O SpinWheelGe escolhe o ganhador com o gerador criptográfico do navegador antes da animação começar, então o resultado não depende de quando nem de quão rápido você toca." },
       { h2: "Passo 5: Sorteie suplentes na mesma hora" },
       { p: "Nem todo ganhador responde. Sortear dois ou três suplentes (em ordem) na mesma sessão gravada evita um segundo sorteio que poderia ser questionado. Na roleta, remova cada ganhador e gire de novo; o histórico guarda a ordem com horário." },
       { h2: "Passo 6: Entre em contato, confirme e anuncie" },
       { ul: ["Fale com o ganhador pelo meio informado nas regras.", "Cuidado com golpistas: avise que você nunca pedirá pagamento nem senha.", "Confirme os requisitos (idade, região) antes de enviar.", "Anuncie o ganhador publicamente depois que ele aceitar, com autorização."] },
       { h2: "Passo 7: Guarde registros" },
-      { p: "Guarde as regras, a lista final, a gravação e o histórico do sorteio por alguns meses. Se alguém contestar, você terá tudo. No WhirlPick, exporte o histórico em CSV logo depois do sorteio." },
+      { p: "Guarde as regras, a lista final, a gravação e o histórico do sorteio por alguns meses. Se alguém contestar, você terá tudo. No SpinWheelGe, exporte o histórico em CSV logo depois do sorteio." },
       { tip: "Chances com pesos são ótimas para roletas de prêmios em eventos, mas num sorteio com um só prêmio todas as participações válidas devem ter a mesma chance. Use o modo normal." },
     ],
   },
@@ -161,7 +161,7 @@ export const posts: BlogPost[] = [
       { h2: "Sorteador de times: dividir um grupo" },
       { p: "Quando a decisão é “quem fica com quem”, um [sorteador de times](/team-generator/) ganha de girar a roleta várias vezes. Cole os nomes, defina o número de times e todos são divididos em grupos equilibrados num passo só." },
       { h2: "O que torna um sorteador confiável?" },
-      { p: "Por baixo dos panos, muitas ferramentas online usam uma função pseudoaleatória básica, boa para jogos mas não feita para ser imprevisível. As melhores usam uma fonte criptograficamente segura — no navegador, a Web Crypto API — e um método sem viés para transformar bits em escolha. Todas as ferramentas do WhirlPick funcionam assim, e a roleta decide o vencedor antes da animação para o visual não influenciar." },
+      { p: "Por baixo dos panos, muitas ferramentas online usam uma função pseudoaleatória básica, boa para jogos mas não feita para ser imprevisível. As melhores usam uma fonte criptograficamente segura — no navegador, a Web Crypto API — e um método sem viés para transformar bits em escolha. Todas as ferramentas do SpinWheelGe funcionam assim, e a roleta decide o vencedor antes da animação para o visual não influenciar." },
       { h2: "Guia rápido" },
       { ul: ["Duas opções → cara ou coroa", "Uma pergunta de sim ou não → sim ou não", "3 a 20 opções com público → roleta", "Opções de importâncias diferentes → roleta com pesos", "Intervalos grandes de números → gerador de números", "Dividir pessoas em grupos → sorteador de times"] },
       { tip: "Se o resultado te decepcionar, isso é informação útil. Ferramentas aleatórias são ótimas para revelar o que você queria desde o começo." },

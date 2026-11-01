@@ -1,6 +1,6 @@
 import type { BlogPost } from "@/data/blog/types";
 
-const author = "L’équipe WhirlPick";
+const author = "L’équipe SpinWheelGe";
 
 export const posts: BlogPost[] = [
   {
@@ -30,7 +30,7 @@ export const posts: BlogPost[] = [
       { h2: "3. Groupes et binômes au hasard" },
       { p: "Laisser les élèves choisir leur binôme laisse souvent les mêmes de côté. Pour les binômes et petits groupes, une roue fonctionne, mais le [générateur d’équipes](/team-generator/) est plus rapide : collez votre liste une fois et répartissez la classe en groupes équilibrés en un clic." },
       { h2: "4. Jeux de révision à questions cachées" },
-      { p: "Chaque entrée d’une roue WhirlPick peut contenir une activité cachée : une question, une tâche ou un mot révélé seulement à l’arrêt de la roue. Les jeux de révision ne demandent alors presque aucune préparation :" },
+      { p: "Chaque entrée d’une roue SpinWheelGe peut contenir une activité cachée : une question, une tâche ou un mot révélé seulement à l’arrêt de la roue. Les jeux de révision ne demandent alors presque aucune préparation :" },
       { ol: ["Créez une roue de thèmes ou de points (100, 200, 300…).", "Ajoutez une question dans l’activité cachée de chaque entrée.", "Lancez, révélez la question et laissez les équipes répondre.", "Utilisez le mode Comptage ou l’historique pour les points."] },
       { h2: "5. Pauses actives et transitions" },
       { p: "Quand l’énergie chute après le déjeuner, deux minutes de mouvement peuvent sauver l’après-midi. Mettez des activités sur une roue — jumping jacks, danse statue, étirements — et laissez un élève lancer. Le [modèle de pauses actives](/templates/classroom/brain-break-wheel/) est un bon début." },
@@ -38,7 +38,7 @@ export const posts: BlogPost[] = [
       { p: "Une roue des prénoms est un outil, et comme tout outil, elle peut être bien ou mal utilisée. Quelques garde-fous la gardent positive :" },
       { ul: ["Prévenez les élèves très anxieux, ou autorisez la réponse à deux.", "Commencez par des questions faciles pour habituer la classe.", "N’utilisez jamais la roue pour choisir une punition.", "Orthographiez bien les prénoms et utilisez les prénoms d’usage : ça compte."] },
       { h2: "Confidentialité pour les enseignants" },
-      { p: "Les prénoms d’élèves sont des données personnelles : mieux vaut savoir où ils vont. WhirlPick enregistre vos roues uniquement dans le stockage local du navigateur. Pas de compte, pas de base de données côté serveur, et les liens de partage ne sont créés que si vous cliquez sur Partager. Si vous partagez une roue avec des élèves, le lien contient les prénoms : ne l’envoyez qu’aux personnes concernées." },
+      { p: "Les prénoms d’élèves sont des données personnelles : mieux vaut savoir où ils vont. SpinWheelGe enregistre vos roues uniquement dans le stockage local du navigateur. Pas de compte, pas de base de données côté serveur, et les liens de partage ne sont créés que si vous cliquez sur Partager. Si vous partagez une roue avec des élèves, le lien contient les prénoms : ne l’envoyez qu’aux personnes concernées." },
       { h2: "Mise en place express" },
       { ol: ["Ouvrez la roue des prénoms et collez votre liste (un prénom par ligne).", "Passez en mode Élimination dans l’onglet Tirage.", "Choisissez un thème et activez le son.", "Cliquez sur le plein écran pour projeter.", "En fin de cours, cliquez sur Tout restaurer pour demain."] },
     ],
@@ -95,13 +95,13 @@ export const posts: BlogPost[] = [
       { p: "Le [tirage de commentaires YouTube](/youtube-comment-picker/) fait automatiquement les étapes 2 à 4 pour les vidéos YouTube : il charge les commentaires, filtre par mot-clé, exclut les comptes indiqués et limite à une participation par personne." },
       { h2: "Étape 4 : tirez au sort devant la caméra" },
       { p: "La transparence est la meilleure défense contre les accusations. Faites le tirage là où les participants peuvent le voir : en direct, en vidéo publiée ensuite ou en story. Un outil visuel comme une [roue des prénoms](/wheel-of-names/) ou une [roue des lots](/prize-wheel/) rend le tirage facile à suivre et plus captivant." },
-      { p: "Vérifiez que l’outil est vraiment aléatoire. WhirlPick choisit le gagnant avec le générateur cryptographique du navigateur avant le début de l’animation : le résultat ne dépend ni du moment ni de la vitesse du clic." },
+      { p: "Vérifiez que l’outil est vraiment aléatoire. SpinWheelGe choisit le gagnant avec le générateur cryptographique du navigateur avant le début de l’animation : le résultat ne dépend ni du moment ni de la vitesse du clic." },
       { h2: "Étape 5 : tirez les suppléants dans la foulée" },
       { p: "Les gagnants ne répondent pas toujours. Tirer deux ou trois suppléants (dans l’ordre) pendant la même session filmée évite un second tirage contestable. Sur une roue, retirez chaque gagnant puis relancez ; l’historique garde l’ordre avec l’heure." },
       { h2: "Étape 6 : contactez, vérifiez, annoncez" },
       { ul: ["Contactez le gagnant par le moyen indiqué dans les règles.", "Méfiez-vous des usurpateurs : annoncez que vous ne demanderez jamais de paiement ni de mot de passe.", "Vérifiez les conditions (âge, lieu) avant l’envoi.", "Annoncez publiquement le gagnant une fois le lot accepté, avec son accord."] },
       { h2: "Étape 7 : gardez une trace" },
-      { p: "Conservez règles, liste finale, vidéo et historique du tirage quelques mois. En cas de contestation, vous aurez tout sous la main. Sur WhirlPick, exportez l’historique en CSV juste après le tirage." },
+      { p: "Conservez règles, liste finale, vidéo et historique du tirage quelques mois. En cas de contestation, vous aurez tout sous la main. Sur SpinWheelGe, exportez l’historique en CSV juste après le tirage." },
       { tip: "Les chances pondérées sont parfaites pour une roue des lots en événement, mais pour un concours à lot unique, chaque participation valide doit avoir la même chance. Utilisez le mode normal." },
     ],
   },
@@ -161,7 +161,7 @@ export const posts: BlogPost[] = [
       { h2: "Générateur d’équipes : répartir un groupe" },
       { p: "Quand la décision est « qui va avec qui », un [générateur d’équipes](/team-generator/) bat les tours de roue répétés. Collez les noms, fixez le nombre d’équipes et tout le monde est réparti en groupes équilibrés en une étape." },
       { h2: "Qu’est-ce qui rend un outil aléatoire fiable ?" },
-      { p: "Sous le capot, beaucoup d’outils en ligne utilisent une fonction pseudo-aléatoire basique, suffisante pour jouer mais pas conçue pour être imprévisible. Les meilleurs utilisent une source cryptographiquement sûre — la Web Crypto API dans le navigateur — et une méthode sans biais pour transformer des bits en choix. Tous les outils WhirlPick fonctionnent ainsi, et la roue décide du gagnant avant l’animation pour que le visuel n’influence rien." },
+      { p: "Sous le capot, beaucoup d’outils en ligne utilisent une fonction pseudo-aléatoire basique, suffisante pour jouer mais pas conçue pour être imprévisible. Les meilleurs utilisent une source cryptographiquement sûre — la Web Crypto API dans le navigateur — et une méthode sans biais pour transformer des bits en choix. Tous les outils SpinWheelGe fonctionnent ainsi, et la roue décide du gagnant avant l’animation pour que le visuel n’influence rien." },
       { h2: "Guide express" },
       { ul: ["Deux options → pile ou face", "Une question fermée → tirage oui ou non", "3 à 20 options, avec public → roue", "Options d’importance différente → roue pondérée", "Grands intervalles de nombres → générateur de nombres", "Répartir des personnes → générateur d’équipes"] },
       { tip: "Si le résultat vous déçoit, c’est une information utile. Les outils aléatoires sont excellents pour révéler ce que vous vouliez depuis le début." },
