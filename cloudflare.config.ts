@@ -15,8 +15,8 @@ import { bindings, defineConfig } from "cf/config";
  */
 export default defineConfig(({ mode }) => {
   const isPreview = mode === "preview";
-  // Production is served on spinwheelge.com unless CF_CUSTOM_DOMAIN overrides it ("" disables it).
-  const domain = process.env.CF_CUSTOM_DOMAIN ?? "spinwheelge.com";
+  // Production is served on spinwheelge.com unless CF_CUSTOM_DOMAIN overrides it (CI passes "" when unset).
+  const domain = process.env.CF_CUSTOM_DOMAIN || "spinwheelge.com";
   return {
     worker: {
       name: isPreview ? "whirlpick-preview" : "whirlpick",
