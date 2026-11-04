@@ -448,7 +448,7 @@ const vi: Dict = {
   },
   consent: {
     title: "Tùy chọn quyền riêng tư",
-    text: "Vòng quay của bạn không bao giờ rời khỏi thiết bị. Chúng tôi muốn dùng cookie để thống kê lượt dùng ẩn danh và hiển thị quảng cáo giúp trang luôn miễn phí. Xem",
+    text: "Vòng quay của bạn được lưu trong trình duyệt này, không lưu trên máy chủ của chúng tôi. Chúng tôi muốn dùng cookie để thống kê lượt dùng ẩn danh và hiển thị quảng cáo giúp trang luôn miễn phí. Xem",
     policy: "Chính sách quyền riêng tư",
     gpc: "Trình duyệt của bạn gửi tín hiệu Global Privacy Control, nên quảng cáo sẽ không được cá nhân hóa.",
     essential: "Thiết yếu",

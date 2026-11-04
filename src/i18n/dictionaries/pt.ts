@@ -448,7 +448,7 @@ const pt: Dict = {
   },
   consent: {
     title: "Suas escolhas de privacidade",
-    text: "Suas roletas nunca saem do seu aparelho. Gostaríamos de usar cookies para estatísticas de uso anônimas e para mostrar anúncios que mantêm o site grátis. Veja nossa",
+    text: "Suas roletas ficam salvas neste navegador, não em nossos servidores. Gostaríamos de usar cookies para estatísticas de uso anônimas e para mostrar anúncios que mantêm o site grátis. Veja nossa",
     policy: "Política de privacidade",
     gpc: "Seu navegador envia um sinal Global Privacy Control, então os anúncios não serão personalizados.",
     essential: "Essenciais",

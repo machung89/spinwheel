@@ -448,7 +448,7 @@ const es: Dict = {
   },
   consent: {
     title: "Tus opciones de privacidad",
-    text: "Tus ruletas nunca salen de tu dispositivo. Nos gustaría usar cookies para estadísticas de uso anónimas y para mostrar anuncios que mantienen el sitio gratis. Consulta nuestra",
+    text: "Tus ruletas se guardan en este navegador, no en nuestros servidores. Nos gustaría usar cookies para estadísticas de uso anónimas y para mostrar anuncios que mantienen el sitio gratis. Consulta nuestra",
     policy: "Política de privacidad",
     gpc: "Tu navegador envía una señal Global Privacy Control, así que los anuncios no se personalizarán.",
     essential: "Esenciales",

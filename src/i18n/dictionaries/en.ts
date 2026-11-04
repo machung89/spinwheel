@@ -451,7 +451,7 @@ const en = {
   },
   consent: {
     title: "Your privacy choices",
-    text: "Your wheels never leave your device. We'd like to use cookies for anonymous usage statistics and to show ads that keep this site free. See our",
+    text: "Your wheels are saved in this browser, not on our servers. We'd like to use cookies for anonymous usage statistics and to show ads that keep this site free. See our",
     policy: "Privacy Policy",
     gpc: "Your browser sends a Global Privacy Control signal, so ads will not be personalized.",
     essential: "Essential",

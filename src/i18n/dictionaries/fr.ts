@@ -448,7 +448,7 @@ const fr: Dict = {
   },
   consent: {
     title: "Vos choix de confidentialité",
-    text: "Vos roues ne quittent jamais votre appareil. Nous aimerions utiliser des cookies pour des statistiques d’usage anonymes et pour afficher des publicités qui gardent le site gratuit. Consultez notre",
+    text: "Vos roues sont enregistrées dans ce navigateur, pas sur nos serveurs. Nous aimerions utiliser des cookies pour des statistiques d’usage anonymes et pour afficher des publicités qui gardent le site gratuit. Consultez notre",
     policy: "Politique de confidentialité",
     gpc: "Votre navigateur envoie un signal Global Privacy Control : les publicités ne seront pas personnalisées.",
     essential: "Essentiels",

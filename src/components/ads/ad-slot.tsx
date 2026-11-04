@@ -30,21 +30,34 @@ const BANNERS = [
 
 const bannerFor = (viewport: number) => BANNERS.find((b) => viewport >= b.minViewport) ?? BANNERS[BANNERS.length - 1];
 
-function bannerDocument({ width, height, key }: (typeof BANNERS)[number]) {
-  const options = JSON.stringify({ key, format: "iframe", height, width, params: {} });
-  return `<!doctype html><html><head><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style></head><body><script>atOptions=${options};</script><script src="https://bauval.org/22/${key}"></script></body></html>`;
+type Banner = (typeof BANNERS)[number];
+
+// The network's script reads one global atOptions, so banners on a page load one at a time.
+let bannerQueue = Promise.resolve();
+
+function loadBanner(container: HTMLElement, { width, height, key }: Banner, isCancelled: () => boolean) {
+  bannerQueue = bannerQueue.then(
+    () =>
+      new Promise<void>((resolve) => {
+        if (isCancelled()) return resolve();
+        (window as Window & { atOptions?: unknown }).atOptions = { key, format: "iframe", height, width, params: {} };
+        const script = document.createElement("script");
+        script.src = `https://bauval.org/22/${key}`;
+        script.onload = script.onerror = () => resolve();
+        container.appendChild(script);
+      }),
+  );
 }
 
 /**
- * Network banner, loaded only after the visitor accepts ad cookies. The ad script is third-party and
- * obfuscated, and it reads storage and can navigate the page, so it runs in a sandboxed frame: with no
- * allow-same-origin it can't see the site's localStorage (visitors' lists), and with no
- * allow-top-navigation it can't redirect or hijack the page. Clicks still open the ad in a new tab.
+ * Network banner, loaded directly into the page after the visitor accepts ad cookies. The script is
+ * third-party and runs with full access to the page and its localStorage; the privacy policy says so.
  * html[data-ads] (set before first paint) reserves the height in CSS, so the page doesn't jump.
  */
 function BannerAd({ className }: { className?: string }) {
   const { t } = useI18n();
-  const [banner, setBanner] = useState<(typeof BANNERS)[number] | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
+  const [banner, setBanner] = useState<Banner | null>(null);
 
   useEffect(() => {
     const update = () => setBanner(adsAllowed() ? bannerFor(window.innerWidth) : null);
@@ -57,23 +70,21 @@ function BannerAd({ className }: { className?: string }) {
     };
   }, []);
 
+  useEffect(() => {
+    const container = ref.current;
+    if (!container || !banner) return;
+    let cancelled = false;
+    loadBanner(container, banner, () => cancelled);
+    return () => {
+      cancelled = true;
+      container.replaceChildren();
+    };
+  }, [banner]);
+
   return (
     <aside aria-label={t.common.advertisement} className={cn("ad-banner mx-auto my-8 w-full max-w-5xl", className)}>
       <p className="mb-1 text-center text-[10px] tracking-widest text-muted-fg uppercase">{t.common.advertisement}</p>
-      <div className="ad-banner-frame flex justify-center overflow-hidden">
-        {banner && (
-          <iframe
-            key={banner.key}
-            title={t.common.advertisement}
-            srcDoc={bannerDocument(banner)}
-            sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
-            width={banner.width}
-            height={banner.height}
-            // Matches the frame's document; a mismatch with the dark theme paints an opaque white box.
-            className="shrink-0 border-0 [color-scheme:light]"
-          />
-        )}
-      </div>
+      <div ref={ref} className="ad-banner-frame flex justify-center overflow-hidden" />
     </aside>
   );
 }

@@ -448,7 +448,7 @@ const de: Dict = {
   },
   consent: {
     title: "Deine Datenschutzeinstellungen",
-    text: "Deine Räder verlassen nie dein Gerät. Wir möchten Cookies für anonyme Nutzungsstatistiken und für Anzeigen verwenden, die diese Website kostenlos halten. Siehe unsere",
+    text: "Deine Räder werden in diesem Browser gespeichert, nicht auf unseren Servern. Wir möchten Cookies für anonyme Nutzungsstatistiken und für Anzeigen verwenden, die diese Website kostenlos halten. Siehe unsere",
     policy: "Datenschutzerklärung",
     gpc: "Dein Browser sendet ein Global-Privacy-Control-Signal, daher werden Anzeigen nicht personalisiert.",
     essential: "Notwendig",
