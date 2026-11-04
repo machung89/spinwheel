@@ -44,7 +44,7 @@ export const pages: PagesContent = {
     title: "Privacy Policy",
     seoTitle: "Privacy Policy | SpinWheelGe",
     description: "How SpinWheelGe handles your data: wheels stay in your browser, analytics and ad cookies only with consent, and your privacy rights in the US, Canada and EU.",
-    updated: "Last updated: November 1, 2026",
+    updated: "Last updated: November 4, 2026",
     blocks: [
       { p: 'This policy explains what information {site} ("we", "us") collects when you use {domain} (the "Site"), how it\'s used, and the choices you have. The short version: the wheels and lists you create stay in your browser, and optional analytics and advertising cookies are only used according to your choices.' },
       { h2: "1. Information stored on your device" },
@@ -56,7 +56,8 @@ export const pages: PagesContent = {
         ul: [
           "**Hosting logs.** Our hosting provider, Cloudflare, processes technical data such as IP address, browser type and requested pages to deliver the Site and protect it from abuse.",
           "**Analytics (optional).** With your consent, we use Google Analytics 4 to understand which pages and tools are used. Events include counts such as the number of entries on a wheel, never the text of your entries.",
-          "**Advertising (optional personalization).** We use Google AdSense to show ads. Google and its partners may use cookies to show ads based on your visits to this and other websites. If you decline personalized ads, Google may still show non-personalized ads, which use limited data for frequency capping and fraud prevention. Learn more at [how Google uses information from sites that use its services](https://policies.google.com/technologies/ads).",
+          "**Advertising (optional personalization).** We may also use Google AdSense to show ads. Google and its partners may use cookies to show ads based on your visits to this and other websites. If you decline personalized ads, Google may still show non-personalized ads, which use limited data for frequency capping and fraud prevention. Learn more at [how Google uses information from sites that use its services](https://policies.google.com/technologies/ads).",
+          "**Banner ads from an advertising network (optional).** If you accept advertising cookies, banners from a third-party ad network load inside an isolated frame that can't read your wheels or lists. The network may set its own cookies and receive your IP address, browser details and this site's address. If you decline, these banners aren't loaded.",
         ],
       },
       { h2: "4. YouTube Comment Picker" },
@@ -81,7 +82,7 @@ export const pages: PagesContent = {
     title: "Terms of Service",
     seoTitle: "Terms of Service | SpinWheelGe",
     description: "The terms that apply when you use SpinWheelGe's free spinning wheels and random tools, including acceptable use, giveaways and disclaimers.",
-    updated: "Last updated: November 1, 2026",
+    updated: "Last updated: November 4, 2026",
     blocks: [
       { p: 'These terms apply to your use of {site} (the "Site"). By using the Site you agree to them. If you don\'t agree, please don\'t use the Site.' },
       { h2: "1. The service" },
@@ -104,7 +105,7 @@ export const pages: PagesContent = {
       { h2: "6. Randomness and results" },
       { p: "We use cryptographically secure randomness and test our selection code, but the Site is provided for convenience and entertainment. We don't guarantee any particular outcome and aren't responsible for decisions you make based on a result." },
       { h2: "7. Advertising and third parties" },
-      { p: "The Site shows ads from Google AdSense and links to third-party websites. We aren't responsible for third-party content, products or practices. See our [Privacy Policy](/privacy-policy/) for details on cookies and your choices." },
+      { p: "The Site shows ads from third-party advertising networks and links to third-party websites. We aren't responsible for third-party content, products or practices. See our [Privacy Policy](/privacy-policy/) for details on cookies and your choices." },
       { h2: "8. Disclaimer" },
       { p: 'The Site is provided "as is" and "as available," without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose and non-infringement, to the fullest extent permitted by law.' },
       { h2: "9. Limitation of liability" },

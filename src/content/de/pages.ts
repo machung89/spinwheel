@@ -44,7 +44,7 @@ export const pages: PagesContent = {
     title: "Datenschutzerklärung",
     seoTitle: "Datenschutzerklärung | SpinWheelGe",
     description: "Wie SpinWheelGe mit deinen Daten umgeht: Räder bleiben im Browser, Statistik- und Werbe-Cookies nur mit Einwilligung, und deine Rechte in EU, USA und Kanada.",
-    updated: "Zuletzt aktualisiert: 1. November 2026",
+    updated: "Zuletzt aktualisiert: 4. November 2026",
     blocks: [
       { p: "Diese Erklärung beschreibt, welche Informationen {site} („wir“, „uns“) erhebt, wenn du {domain} (die „Website“) nutzt, wie sie verwendet werden und welche Wahlmöglichkeiten du hast. Kurz gesagt: Die Räder und Listen, die du erstellst, bleiben in deinem Browser, und optionale Statistik- und Werbe-Cookies werden nur gemäß deiner Auswahl verwendet." },
       { h2: "1. Auf deinem Gerät gespeicherte Informationen" },
@@ -56,7 +56,8 @@ export const pages: PagesContent = {
         ul: [
           "**Hosting-Protokolle.** Unser Hosting-Anbieter Cloudflare verarbeitet technische Daten wie IP-Adresse, Browsertyp und aufgerufene Seiten, um die Website auszuliefern und vor Missbrauch zu schützen.",
           "**Statistik (optional).** Mit deiner Einwilligung nutzen wir Google Analytics 4, um zu verstehen, welche Seiten und Tools genutzt werden. Ereignisse enthalten Zahlen wie die Anzahl der Einträge auf einem Rad – nie den Text deiner Einträge.",
-          "**Werbung (optionale Personalisierung).** Wir nutzen Google AdSense, um Anzeigen einzublenden. Google und seine Partner können Cookies verwenden, um Anzeigen auf Grundlage deiner Besuche auf dieser und anderen Websites zu zeigen. Wenn du personalisierte Anzeigen ablehnst, kann Google weiterhin nicht personalisierte Anzeigen zeigen, die begrenzte Daten zur Frequenzbegrenzung und Betrugsprävention nutzen. Mehr dazu: [Wie Google Daten von Websites nutzt, die Google-Dienste verwenden](https://policies.google.com/technologies/ads).",
+          "**Werbung (optionale Personalisierung).** Wir können außerdem Google AdSense nutzen, um Anzeigen einzublenden. Google und seine Partner können Cookies verwenden, um Anzeigen auf Grundlage deiner Besuche auf dieser und anderen Websites zu zeigen. Wenn du personalisierte Anzeigen ablehnst, kann Google weiterhin nicht personalisierte Anzeigen zeigen, die begrenzte Daten zur Frequenzbegrenzung und Betrugsprävention nutzen. Mehr dazu: [Wie Google Daten von Websites nutzt, die Google-Dienste verwenden](https://policies.google.com/technologies/ads).",
+          "**Banner eines Werbenetzwerks (optional).** Wenn du Werbe-Cookies akzeptierst, werden Banner eines externen Werbenetzwerks in einem isolierten Rahmen geladen, der deine Räder und Listen nicht lesen kann. Das Netzwerk kann eigene Cookies setzen und deine IP-Adresse, Browserdaten und die Adresse dieser Website erhalten. Wenn du ablehnst, werden diese Banner nicht geladen.",
         ],
       },
       { h2: "4. YouTube-Kommentar-Auslosung" },
@@ -81,7 +82,7 @@ export const pages: PagesContent = {
     title: "Nutzungsbedingungen",
     seoTitle: "Nutzungsbedingungen | SpinWheelGe",
     description: "Die Bedingungen für die Nutzung der kostenlosen Glücksräder und Zufallstools von SpinWheelGe, einschließlich zulässiger Nutzung, Gewinnspielen und Haftung.",
-    updated: "Zuletzt aktualisiert: 1. November 2026",
+    updated: "Zuletzt aktualisiert: 4. November 2026",
     blocks: [
       { p: "Diese Bedingungen gelten für deine Nutzung von {site} (die „Website“). Mit der Nutzung der Website stimmst du ihnen zu. Wenn du nicht einverstanden bist, nutze die Website bitte nicht." },
       { h2: "1. Der Dienst" },
@@ -104,7 +105,7 @@ export const pages: PagesContent = {
       { h2: "6. Zufall und Ergebnisse" },
       { p: "Wir verwenden kryptografisch sicheren Zufall und testen unseren Auswahlcode, die Website dient aber der Bequemlichkeit und Unterhaltung. Wir garantieren kein bestimmtes Ergebnis und haften nicht für Entscheidungen, die du aufgrund eines Ergebnisses triffst." },
       { h2: "7. Werbung und Dritte" },
-      { p: "Die Website zeigt Anzeigen von Google AdSense und verlinkt auf Websites Dritter. Für Inhalte, Produkte oder Praktiken Dritter sind wir nicht verantwortlich. Details zu Cookies und deinen Wahlmöglichkeiten findest du in unserer [Datenschutzerklärung](/privacy-policy/)." },
+      { p: "Die Website zeigt Anzeigen von Werbenetzwerken Dritter und verlinkt auf Websites Dritter. Für Inhalte, Produkte oder Praktiken Dritter sind wir nicht verantwortlich. Details zu Cookies und deinen Wahlmöglichkeiten findest du in unserer [Datenschutzerklärung](/privacy-policy/)." },
       { h2: "8. Gewährleistungsausschluss" },
       { p: "Die Website wird im Rahmen des gesetzlich Zulässigen „wie besehen“ und „wie verfügbar“ bereitgestellt, ohne ausdrückliche oder stillschweigende Gewährleistung jeglicher Art, einschließlich Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung von Rechten." },
       { h2: "9. Haftungsbeschränkung" },

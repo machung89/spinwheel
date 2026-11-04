@@ -36,7 +36,7 @@ export const pages: PagesContent = {
     title: "Politique de confidentialité",
     seoTitle: "Politique de confidentialité | SpinWheelGe",
     description: "Comment SpinWheelGe traite vos données : les roues restent dans votre navigateur, cookies de mesure et de publicité facultatifs avec consentement, et vos droits.",
-    updated: "Dernière mise à jour : 1er novembre 2026",
+    updated: "Dernière mise à jour : 4 novembre 2026",
     blocks: [
       { p: "Cette politique explique quelles informations {site} (« nous ») collecte lorsque vous utilisez {domain} (le « Site »), comment elles sont utilisées et quels choix vous avez. En bref : les roues et listes que vous créez restent dans votre navigateur, et les cookies facultatifs de mesure d’audience et de publicité ne sont utilisés que selon vos choix." },
       { h2: "1. Informations stockées sur votre appareil" },
@@ -47,7 +47,8 @@ export const pages: PagesContent = {
       { ul: [
         "**Journaux d’hébergement.** Notre hébergeur, Cloudflare, traite des données techniques comme l’adresse IP, le type de navigateur et les pages demandées pour servir le Site et le protéger des abus.",
         "**Mesure d’audience (facultative).** Avec votre consentement, nous utilisons Google Analytics 4 pour savoir quelles pages et quels outils sont utilisés. Les événements contiennent des nombres, comme le nombre d’entrées d’une roue, jamais leur texte.",
-        "**Publicité (personnalisation facultative).** Nous utilisons Google AdSense pour afficher des annonces. Google et ses partenaires peuvent utiliser des cookies pour diffuser des annonces selon vos visites sur ce site et d’autres. Si vous refusez la personnalisation, Google peut afficher des annonces non personnalisées, qui utilisent des données limitées pour le plafonnement et la lutte contre la fraude. En savoir plus sur [l’utilisation des informations par Google](https://policies.google.com/technologies/ads).",
+        "**Publicité (personnalisation facultative).** Nous pouvons aussi utiliser Google AdSense pour afficher des annonces. Google et ses partenaires peuvent utiliser des cookies pour diffuser des annonces selon vos visites sur ce site et d’autres. Si vous refusez la personnalisation, Google peut afficher des annonces non personnalisées, qui utilisent des données limitées pour le plafonnement et la lutte contre la fraude. En savoir plus sur [l’utilisation des informations par Google](https://policies.google.com/technologies/ads).",
+        "**Bannières d’un réseau publicitaire (facultatif).** Si vous acceptez les cookies publicitaires, les bannières d’un réseau tiers se chargent dans un cadre isolé qui ne peut pas lire vos roues ni vos listes. Le réseau peut déposer ses propres cookies et recevoir votre adresse IP, des informations sur votre navigateur et l’adresse de ce site. Si vous refusez, ces bannières ne sont pas chargées.",
       ] },
       { h2: "4. Tirage de commentaires YouTube" },
       { p: "Si vous chargez les commentaires d’une vidéo, le lien est envoyé à notre serveur, qui demande les commentaires publics à l’API YouTube Data. Nous ne conservons pas les commentaires. Cette fonction est aussi soumise aux [Règles de confidentialité de Google](https://policies.google.com/privacy) et aux [Conditions d’utilisation de YouTube](https://www.youtube.com/t/terms)." },
@@ -71,7 +72,7 @@ export const pages: PagesContent = {
     title: "Conditions d’utilisation",
     seoTitle: "Conditions d’utilisation | SpinWheelGe",
     description: "Les conditions applicables à l’utilisation des roues et outils aléatoires gratuits de SpinWheelGe : usage acceptable, concours et limitations de responsabilité.",
-    updated: "Dernière mise à jour : 1er novembre 2026",
+    updated: "Dernière mise à jour : 4 novembre 2026",
     blocks: [
       { p: "Ces conditions s’appliquent à votre utilisation de {site} (le « Site »). En utilisant le Site, vous les acceptez. Si vous n’êtes pas d’accord, n’utilisez pas le Site." },
       { h2: "1. Le service" },
@@ -87,7 +88,7 @@ export const pages: PagesContent = {
       { h2: "6. Hasard et résultats" },
       { p: "Nous utilisons un hasard cryptographiquement sûr et testons notre code de tirage, mais le Site est fourni pour la commodité et le divertissement. Nous ne garantissons aucun résultat particulier et ne sommes pas responsables des décisions prises sur la base d’un résultat." },
       { h2: "7. Publicité et tiers" },
-      { p: "Le Site affiche des annonces Google AdSense et des liens vers des sites tiers. Nous ne sommes pas responsables du contenu, des produits ou des pratiques des tiers. Consultez notre [Politique de confidentialité](/privacy-policy/) pour les cookies et vos choix." },
+      { p: "Le Site affiche des annonces de réseaux publicitaires tiers et des liens vers des sites tiers. Nous ne sommes pas responsables du contenu, des produits ou des pratiques des tiers. Consultez notre [Politique de confidentialité](/privacy-policy/) pour les cookies et vos choix." },
       { h2: "8. Absence de garantie" },
       { p: "Le Site est fourni « en l’état » et « selon disponibilité », sans garantie d’aucune sorte, expresse ou implicite, notamment de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon, dans toute la mesure permise par la loi." },
       { h2: "9. Limitation de responsabilité" },

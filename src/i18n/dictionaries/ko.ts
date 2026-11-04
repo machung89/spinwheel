@@ -456,7 +456,7 @@ const ko: Dict = {
     analytics: "분석",
     analyticsDesc: "익명 이용 통계(Google 애널리틱스).",
     ads: "맞춤 광고",
-    adsDesc: "Google AdSense가 쿠키로 광고를 맞춤화하도록 허용합니다. 끄면 미국 주법상 ‘판매/공유’ 거부로도 처리됩니다.",
+    adsDesc: "광고 파트너가 쿠키로 광고를 표시하고 맞춤화하도록 허용합니다. 끄면 배너가 로드되지 않으며 미국 주법상 ‘판매/공유’ 거부로도 처리됩니다.",
     save: "설정 저장",
     customize: "직접 설정",
     reject: "필수 외 거부",

@@ -456,7 +456,7 @@ const vi: Dict = {
     analytics: "Phân tích",
     analyticsDesc: "Thống kê lượt dùng ẩn danh (Google Analytics).",
     ads: "Quảng cáo cá nhân hóa",
-    adsDesc: "Cho phép Google AdSense dùng cookie để cá nhân hóa quảng cáo. Tắt mục này cũng là từ chối “bán/chia sẻ” dữ liệu theo luật các bang của Mỹ.",
+    adsDesc: "Cho phép đối tác quảng cáo dùng cookie để hiển thị và cá nhân hóa quảng cáo. Tắt mục này sẽ không tải banner quảng cáo, đồng thời là từ chối “bán/chia sẻ” dữ liệu theo luật các bang của Mỹ.",
     save: "Lưu lựa chọn",
     customize: "Tùy chỉnh",
     reject: "Từ chối không thiết yếu",

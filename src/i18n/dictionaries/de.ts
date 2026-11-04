@@ -456,7 +456,7 @@ const de: Dict = {
     analytics: "Statistik",
     analyticsDesc: "Anonyme Nutzungsstatistiken (Google Analytics).",
     ads: "Personalisierte Anzeigen",
-    adsDesc: "Erlaubt Google AdSense, Cookies zur Personalisierung von Anzeigen zu nutzen. Das Ausschalten gilt auch als Widerspruch gegen „Verkauf/Weitergabe“ nach US-Bundesstaatsrecht.",
+    adsDesc: "Erlaubt Werbepartnern, Cookies zu nutzen, um Anzeigen einzublenden und zu personalisieren. Das Ausschalten verhindert das Laden von Bannern und gilt auch als Widerspruch gegen „Verkauf/Weitergabe“ nach US-Bundesstaatsrecht.",
     save: "Auswahl speichern",
     customize: "Anpassen",
     reject: "Nicht notwendige ablehnen",

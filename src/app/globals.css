@@ -230,6 +230,28 @@ body {
   transform-origin: top left;
 }
 
+/* Banner ads: hidden until the visitor accepts ad cookies; the frame height matches the banner chosen for
+   the viewport (see components/ads/ad-slot.tsx), so loading it doesn't shift the page. */
+.ad-banner {
+  display: none;
+}
+html[data-ads] .ad-banner {
+  display: block;
+}
+.ad-banner-frame {
+  height: 50px;
+}
+@media (min-width: 500px) {
+  .ad-banner-frame {
+    height: 60px;
+  }
+}
+@media (min-width: 760px) {
+  .ad-banner-frame {
+    height: 90px;
+  }
+}
+
 /* iOS Safari zooms the page when a field under 16px gets focus. On touch screens, text-entry fields use 16px
    (this rule is unlayered, so it wins over Tailwind's text-sm utility). Pinch-zoom stays available. */
 @media (pointer: coarse) {

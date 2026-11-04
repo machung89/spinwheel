@@ -459,7 +459,7 @@ const en = {
     analytics: "Analytics",
     analyticsDesc: "Anonymous usage statistics (Google Analytics).",
     ads: "Personalized ads",
-    adsDesc: "Lets Google AdSense use cookies to personalize ads. Turning this off is also an opt-out of “sale/sharing” under US state laws.",
+    adsDesc: "Lets advertising partners use cookies to show and personalize ads. Turning this off stops banner ads from loading and is also an opt-out of “sale/sharing” under US state laws.",
     save: "Save choices",
     customize: "Customize",
     reject: "Reject non-essential",

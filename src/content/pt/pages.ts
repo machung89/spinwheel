@@ -36,7 +36,7 @@ export const pages: PagesContent = {
     title: "Política de privacidade",
     seoTitle: "Política de privacidade | SpinWheelGe",
     description: "Como o SpinWheelGe trata seus dados: as roletas ficam no navegador, cookies opcionais de estatísticas e anúncios com consentimento, e seus direitos de privacidade.",
-    updated: "Última atualização: 1º de novembro de 2026",
+    updated: "Última atualização: 4 de novembro de 2026",
     blocks: [
       { p: "Esta política explica quais informações o {site} (“nós”) coleta quando você usa o {domain} (o “Site”), como são usadas e quais escolhas você tem. Resumindo: as roletas e listas que você cria ficam no navegador, e cookies opcionais de estatísticas e anúncios só são usados conforme suas escolhas." },
       { h2: "1. Informações guardadas no seu aparelho" },
@@ -47,7 +47,8 @@ export const pages: PagesContent = {
       { ul: [
         "**Registros de hospedagem.** Nosso provedor, a Cloudflare, processa dados técnicos como IP, tipo de navegador e páginas acessadas para entregar o Site e protegê-lo contra abusos.",
         "**Estatísticas (opcional).** Com seu consentimento, usamos o Google Analytics 4 para saber quais páginas e ferramentas são usadas. Os eventos trazem contagens, como o número de itens numa roleta, nunca o texto deles.",
-        "**Anúncios (personalização opcional).** Usamos o Google AdSense para exibir anúncios. O Google e parceiros podem usar cookies para mostrar anúncios com base nas suas visitas a este e outros sites. Se recusar anúncios personalizados, o Google ainda pode mostrar anúncios não personalizados, que usam dados limitados para controle de frequência e prevenção de fraude. Saiba mais sobre [como o Google usa informações de sites que usam seus serviços](https://policies.google.com/technologies/ads).",
+        "**Anúncios (personalização opcional).** Também podemos usar o Google AdSense para exibir anúncios. O Google e parceiros podem usar cookies para mostrar anúncios com base nas suas visitas a este e outros sites. Se recusar anúncios personalizados, o Google ainda pode mostrar anúncios não personalizados, que usam dados limitados para controle de frequência e prevenção de fraude. Saiba mais sobre [como o Google usa informações de sites que usam seus serviços](https://policies.google.com/technologies/ads).",
+        "**Banners de uma rede de anúncios (opcional).** Se você aceitar os cookies de publicidade, banners de uma rede de terceiros são carregados em um quadro isolado que não consegue ler suas roletas nem suas listas. A rede pode definir cookies próprios e receber seu endereço IP, dados do navegador e o endereço deste site. Se você recusar, esses banners não são carregados.",
       ] },
       { h2: "4. Sorteio de comentários do YouTube" },
       { p: "Se você carregar comentários de um vídeo, o link é enviado ao nosso servidor, que pede os comentários públicos à API do YouTube Data. Não guardamos os comentários. O uso também segue a [Política de Privacidade do Google](https://policies.google.com/privacy) e os [Termos de Serviço do YouTube](https://www.youtube.com/t/terms)." },
@@ -71,7 +72,7 @@ export const pages: PagesContent = {
     title: "Termos de uso",
     seoTitle: "Termos de uso | SpinWheelGe",
     description: "Os termos aplicáveis ao uso das roletas e ferramentas aleatórias grátis do SpinWheelGe, incluindo uso aceitável, sorteios e isenções de responsabilidade.",
-    updated: "Última atualização: 1º de novembro de 2026",
+    updated: "Última atualização: 4 de novembro de 2026",
     blocks: [
       { p: "Estes termos valem para o uso do {site} (o “Site”). Ao usar o Site você concorda com eles. Se não concordar, não use o Site." },
       { h2: "1. O serviço" },
@@ -87,7 +88,7 @@ export const pages: PagesContent = {
       { h2: "6. Aleatoriedade e resultados" },
       { p: "Usamos aleatoriedade criptograficamente segura e testamos nosso código de sorteio, mas o Site é oferecido por conveniência e diversão. Não garantimos nenhum resultado específico e não respondemos por decisões tomadas com base em um resultado." },
       { h2: "7. Anúncios e terceiros" },
-      { p: "O Site exibe anúncios do Google AdSense e links para sites de terceiros. Não respondemos por conteúdos, produtos ou práticas de terceiros. Veja nossa [Política de privacidade](/privacy-policy/) para cookies e suas escolhas." },
+      { p: "O Site exibe anúncios de redes de publicidade de terceiros e links para sites de terceiros. Não respondemos por conteúdos, produtos ou práticas de terceiros. Veja nossa [Política de privacidade](/privacy-policy/) para cookies e suas escolhas." },
       { h2: "8. Isenção de garantias" },
       { p: "O Site é oferecido “no estado em que se encontra” e “conforme disponível”, sem garantias de qualquer tipo, expressas ou implícitas, incluindo comercialização, adequação a uma finalidade e não violação, na máxima medida permitida por lei." },
       { h2: "9. Limitação de responsabilidade" },

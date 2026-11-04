@@ -456,7 +456,7 @@ const fr: Dict = {
     analytics: "Mesure d’audience",
     analyticsDesc: "Statistiques d’usage anonymes (Google Analytics).",
     ads: "Publicités personnalisées",
-    adsDesc: "Permet à Google AdSense d’utiliser des cookies pour personnaliser les annonces. Les désactiver vaut aussi refus de la « vente/partage » au sens des lois des États américains.",
+    adsDesc: "Permet aux partenaires publicitaires d’utiliser des cookies pour afficher et personnaliser les annonces. Les désactiver empêche le chargement des bannières et vaut aussi refus de la « vente/partage » au sens des lois des États américains.",
     save: "Enregistrer mes choix",
     customize: "Personnaliser",
     reject: "Refuser le non essentiel",

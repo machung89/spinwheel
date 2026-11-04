@@ -456,7 +456,7 @@ const es: Dict = {
     analytics: "Analítica",
     analyticsDesc: "Estadísticas de uso anónimas (Google Analytics).",
     ads: "Anuncios personalizados",
-    adsDesc: "Permite que Google AdSense use cookies para personalizar anuncios. Desactivarlo también excluye la “venta/compartición” según las leyes estatales de EE. UU.",
+    adsDesc: "Permite que los socios publicitarios usen cookies para mostrar y personalizar anuncios. Desactivarlo impide que se carguen los banners y también excluye la “venta/compartición” según las leyes estatales de EE. UU.",
     save: "Guardar opciones",
     customize: "Personalizar",
     reject: "Rechazar no esenciales",

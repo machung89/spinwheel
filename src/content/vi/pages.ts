@@ -44,7 +44,7 @@ export const pages: PagesContent = {
     title: "Chính sách quyền riêng tư",
     seoTitle: "Chính sách quyền riêng tư | SpinWheelGe",
     description: "Cách SpinWheelGe xử lý dữ liệu: vòng quay ở lại trong trình duyệt, cookie phân tích và quảng cáo tùy chọn theo sự đồng ý, và quyền riêng tư của bạn.",
-    updated: "Cập nhật lần cuối: 1 tháng 11, 2026",
+    updated: "Cập nhật lần cuối: 4 tháng 11, 2026",
     blocks: [
       { p: "Chính sách này giải thích {site} (“chúng tôi”) thu thập thông tin gì khi bạn dùng {domain} (“Trang”), cách sử dụng và lựa chọn của bạn. Tóm tắt: vòng quay và danh sách bạn tạo ở lại trong trình duyệt, còn cookie phân tích và quảng cáo chỉ được dùng theo lựa chọn của bạn." },
       { h2: "1. Thông tin lưu trên thiết bị của bạn" },
@@ -56,7 +56,8 @@ export const pages: PagesContent = {
         ul: [
           "**Nhật ký máy chủ.** Nhà cung cấp hạ tầng của chúng tôi, Cloudflare, xử lý dữ liệu kỹ thuật như địa chỉ IP, loại trình duyệt và trang được truy cập để phục vụ và bảo vệ Trang.",
           "**Phân tích (tùy chọn).** Khi được bạn đồng ý, chúng tôi dùng Google Analytics 4 để biết trang và công cụ nào được dùng. Sự kiện chỉ gồm số đếm như số mục trên vòng quay, không bao giờ có nội dung các mục.",
-          "**Quảng cáo (cá nhân hóa tùy chọn).** Chúng tôi dùng Google AdSense để hiển thị quảng cáo. Google và đối tác có thể dùng cookie để hiển thị quảng cáo dựa trên lượt truy cập của bạn vào trang này và các trang khác. Nếu bạn từ chối quảng cáo cá nhân hóa, Google vẫn có thể hiển thị quảng cáo không cá nhân hóa, dùng dữ liệu hạn chế cho giới hạn tần suất và chống gian lận. Xem thêm [cách Google sử dụng thông tin từ các trang web dùng dịch vụ của Google](https://policies.google.com/technologies/ads).",
+          "**Quảng cáo (cá nhân hóa tùy chọn).** Chúng tôi cũng có thể dùng Google AdSense để hiển thị quảng cáo. Google và đối tác có thể dùng cookie để hiển thị quảng cáo dựa trên lượt truy cập của bạn vào trang này và các trang khác. Nếu bạn từ chối quảng cáo cá nhân hóa, Google vẫn có thể hiển thị quảng cáo không cá nhân hóa, dùng dữ liệu hạn chế cho giới hạn tần suất và chống gian lận. Xem thêm [cách Google sử dụng thông tin từ các trang web dùng dịch vụ của Google](https://policies.google.com/technologies/ads).",
+          "**Quảng cáo banner từ mạng quảng cáo (tùy chọn).** Nếu bạn chấp nhận cookie quảng cáo, banner từ một mạng quảng cáo bên thứ ba sẽ tải trong một khung cách ly, không đọc được vòng quay hay danh sách của bạn. Mạng quảng cáo có thể đặt cookie riêng và nhận địa chỉ IP, thông tin trình duyệt và địa chỉ của trang này. Nếu bạn từ chối, các banner này sẽ không được tải.",
         ],
       },
       { h2: "4. Công cụ chọn bình luận YouTube" },
@@ -81,7 +82,7 @@ export const pages: PagesContent = {
     title: "Điều khoản sử dụng",
     seoTitle: "Điều khoản sử dụng | SpinWheelGe",
     description: "Các điều khoản áp dụng khi bạn dùng vòng quay và công cụ ngẫu nhiên miễn phí của SpinWheelGe, gồm cách sử dụng chấp nhận được, minigame và miễn trừ trách nhiệm.",
-    updated: "Cập nhật lần cuối: 1 tháng 11, 2026",
+    updated: "Cập nhật lần cuối: 4 tháng 11, 2026",
     blocks: [
       { p: "Các điều khoản này áp dụng khi bạn dùng {site} (“Trang”). Khi sử dụng Trang, bạn đồng ý với các điều khoản. Nếu không đồng ý, vui lòng không sử dụng Trang." },
       { h2: "1. Dịch vụ" },
@@ -104,7 +105,7 @@ export const pages: PagesContent = {
       { h2: "6. Tính ngẫu nhiên và kết quả" },
       { p: "Chúng tôi dùng nguồn ngẫu nhiên an toàn chuẩn mật mã và kiểm thử mã chọn lựa, nhưng Trang được cung cấp để tiện lợi và giải trí. Chúng tôi không đảm bảo bất kỳ kết quả cụ thể nào và không chịu trách nhiệm cho quyết định bạn đưa ra dựa trên kết quả." },
       { h2: "7. Quảng cáo và bên thứ ba" },
-      { p: "Trang hiển thị quảng cáo từ Google AdSense và có liên kết tới các trang bên thứ ba. Chúng tôi không chịu trách nhiệm về nội dung, sản phẩm hay cách làm của bên thứ ba. Xem [Chính sách quyền riêng tư](/privacy-policy/) để biết về cookie và lựa chọn của bạn." },
+      { p: "Trang hiển thị quảng cáo từ các mạng quảng cáo bên thứ ba và có liên kết tới các trang bên thứ ba. Chúng tôi không chịu trách nhiệm về nội dung, sản phẩm hay cách làm của bên thứ ba. Xem [Chính sách quyền riêng tư](/privacy-policy/) để biết về cookie và lựa chọn của bạn." },
       { h2: "8. Miễn trừ bảo đảm" },
       { p: "Trang được cung cấp “nguyên trạng” và “tùy khả năng”, không có bất kỳ bảo đảm nào, rõ ràng hay ngụ ý, bao gồm khả năng thương mại, phù hợp với mục đích cụ thể và không vi phạm, trong phạm vi tối đa pháp luật cho phép." },
       { h2: "9. Giới hạn trách nhiệm" },

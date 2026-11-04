@@ -1,5 +1,16 @@
 # AdSense, consent, analytics and Search Console
 
+## Banner ads (ad network)
+
+Banner units (728×90, 468×60, 320×50) are configured in `src/components/ads/ad-slot.tsx` and fill the existing
+`AdSlot` placements when AdSense isn't configured. The size is picked from the viewport width.
+
+- **Sandboxed.** The network's script is obfuscated, reads storage and can navigate the page, so it runs in a
+  sandboxed iframe without `allow-same-origin` or `allow-top-navigation`. It can't read visitors' lists or redirect
+  the page. Don't paste the network's tag directly into a page, and don't enable its pop-under or redirect formats.
+- **Consent.** Banners load only after a visitor accepts ad cookies, and never with a Global Privacy Control signal.
+- **Turning off.** Set `NEXT_PUBLIC_BANNER_ADS=off` and rebuild. The preview Worker already has it off.
+
 ## Google AdSense
 
 1. Apply at adsense.google.com with your production domain. Approval isn't guaranteed. The site is built for

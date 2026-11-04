@@ -456,7 +456,7 @@ const zh: Dict = {
     analytics: "统计分析",
     analyticsDesc: "匿名使用统计（Google Analytics）。",
     ads: "个性化广告",
-    adsDesc: "允许 Google AdSense 使用 Cookie 个性化广告。关闭此项也等同于依据美国各州法律拒绝“出售/共享”。",
+    adsDesc: "允许广告合作伙伴使用 Cookie 展示和个性化广告。关闭此项后横幅广告不会加载，也等同于依据美国各州法律拒绝“出售/共享”。",
     save: "保存选择",
     customize: "自定义",
     reject: "拒绝非必要",
